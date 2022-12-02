@@ -418,7 +418,6 @@ welcome ()
 
 const precompArr = []
 
-console.log(activeCoins)
 
  return(
   <>
