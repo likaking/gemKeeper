@@ -62,10 +62,7 @@
 	overflow-X: hidden;
 	overflow-Y : scroll;
 	scroll-behavior: smooth;
-
-	
 }
-
 
 .showPriceAlertz_ListCont_PriceAlertz{
    display:flex;
@@ -136,7 +133,7 @@ margin-bottom: 0.3rem;
    
   /* Handle */
   .showPriceAlertz_ListContainer::-webkit-scrollbar-thumb {
-    background: rgb(247, 115, 205); 
+    background: rgb(227, 102, 187); 
   }
   
   /* Handle on hover */
@@ -191,7 +188,7 @@ margin-bottom: 0.3rem;
 }
 }
 @media screen and (max-width: 780px) {
-   .showPriceAlertz_Contianer{
+.showPriceAlertz_Contianer{
 	height:35%;	
 }
 .showPriceAlertz_ContianerShow{
@@ -227,7 +224,6 @@ margin-bottom: 0.3rem;
 	font-weight:500;
 	margin-top:7rem;
 	padding:0.5rem;
-    color: rgb(56, 88, 84);
 	position: relative
 }
 .showPriceAlertz_close{
@@ -235,7 +231,6 @@ margin-bottom: 0.3rem;
 	top:35%;
 	right: 1%;
 	font-size: 0.8em;
-	color:rgba(56, 88, 84, 0.384);
 	transition: .4s;
 }
 .showPriceAlertz_close:hover{
@@ -255,30 +250,7 @@ scrollbar-width: none;
 .showPriceAlertz_ListCont_PriceAlertz{
    height:3.5rem;
    width: 130%; 
-  
 }
-
-/* width */
-.showPriceAlertz_ListContainer::-webkit-scrollbar {
-    width: 3px;
-  }
-  
-  /* Track */
-  .showPriceAlertz_ListContainer::-webkit-scrollbar-track {
-    background: #f1f1f1; 
-  }
-   
-  /* Handle */
-  .showPriceAlertz_ListContainer::-webkit-scrollbar-thumb {
-    background: rgba(94, 129, 139, 0.836); 
-  }
-  
-  /* Handle on hover */
-  .showPriceAlertz_ListContainer::-webkit-scrollbar-thumb:hover {
-    background: rgb(94, 129, 139); 
-  }
-
-
 }
 
 @media screen and (max-width: 430px) {
@@ -296,7 +268,6 @@ scrollbar-width: none;
 	font-weight:500;
 	margin-top:7rem;
 	padding:0.5rem;
-    color: rgb(56, 88, 84);
 	position: relative
 }
 .showPriceAlertz_close{
@@ -304,7 +275,6 @@ scrollbar-width: none;
 	top:33%;
 	right: 1%;
 	font-size: 0.8em;
-	color:rgba(56, 88, 84, 0.384);
 	transition: .4s;
 }
 .showPriceAlertz_close:hover{
