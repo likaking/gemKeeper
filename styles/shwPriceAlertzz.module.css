@@ -3,7 +3,7 @@
 	top:-70%;
 	width:100%;
 	height:50%;
-	background-color: rgb(248, 255, 255);
+	background-color: rgb(241, 111, 202);
 	transition: 0.50s;
 	 -webkit-backface-visibility: hidden;
  -webkit-perspective: 1000;
@@ -21,8 +21,8 @@
 	top:-5%;
 	width:100%;
 	height:50%;
-	background-color: rgb(248, 255, 255);
-    box-shadow: -3px 3px 3px 3px rgba(202, 202, 202, 0.637);
+	background-color: rgb(241, 111, 202);
+    box-shadow: -3px 3px 3px 3px rgba(235, 162, 213, 0.493);
 	transition: 0.50s;
 	 -webkit-backface-visibility: hidden;
  -webkit-perspective: 1000;
@@ -40,7 +40,7 @@
 	font-weight:500;
 	margin-top:4.7rem;
 	padding:0.5rem;
-    color: rgb(56, 88, 84);
+    color: rgb(248, 230, 243);
 	position: relative
 }
 .showPriceAlertz_close{
@@ -48,15 +48,15 @@
 	top:35%;
 	right: 1%;
 	font-size: 0.8em;
-	color:rgba(56, 88, 84, 0.384);
+	color:rgb(224, 18, 163);
 	transition: .4s;
 }
 .showPriceAlertz_close:hover{
-	color:rgb(56, 88, 84);	
+	color:rgb(243, 204, 232);	
 	transition: .4s;
 }
 .showPriceAlertz_ListContainer{
-    width: 50%;
+    width: 70%;
 	height:62%;
 	margin: auto;
 	overflow-X: hidden;
@@ -66,6 +66,7 @@
 	
 }
 
+
 .showPriceAlertz_ListCont_PriceAlertz{
    display:flex;
    align-items: center;
@@ -74,13 +75,22 @@
    height:3.3em;
    padding-right:0.2rem;
    gap:2%;
-   border: 1px solid rgb(202, 255, 249);
+   border: 1px solid rgb(253, 169, 229);
+   color:rgb(255, 241, 251) ;
    padding:0.3rem;
+   position:relative;
    transition:.4s;
-   position:relative
 }
+
+.showPriceAlertz_ListCont_PriceAlertz:nth-last-child(n){
+margin-bottom: 0.3rem;
+}
+
 .showPriceAlertz_ListCont_PriceAlertz:hover{
-   background-color: rgba(233, 247, 247, 0.5);
+   /*background-color: rgb(240, 71, 192);*/
+   color:rgb(255, 246, 252) ;
+   border: 1px solid rgb(252, 220, 243);
+   border-style: dashed;
    transition:.4s
 }
 .showPriceAlertz_ListCont_PriceAlertz_img{
@@ -102,7 +112,7 @@
 
 .showPriceAlertz_ListCont_delIcon{
 	flex:0.08;
-	color:rgb(163, 204, 199);
+	color:rgb(248, 167, 222);
 	transition: .4s;
 	display: flex;
 	align-items: center;
@@ -111,7 +121,7 @@
 	right:1%
 }
 .showPriceAlertz_ListCont_delIcon:hover{
-	color:rgb(89, 163, 155);
+	color:rgb(247, 203, 233);
 	transition: .4s;
 }
 /* width */
@@ -121,24 +131,18 @@
   
   /* Track */
   .showPriceAlertz_ListContainer::-webkit-scrollbar-track {
-    background: #f1f1f1; 
+    background: rgb(248, 142, 215); 
   }
    
   /* Handle */
   .showPriceAlertz_ListContainer::-webkit-scrollbar-thumb {
-    background: rgba(94, 129, 139, 0.836); 
+    background: rgb(247, 115, 205); 
   }
   
   /* Handle on hover */
   .showPriceAlertz_ListContainer::-webkit-scrollbar-thumb:hover {
-    background: rgb(94, 129, 139); 
+    background: rgb(247, 87, 196); 
   }
-
-
-
-
-
-
 
 
 

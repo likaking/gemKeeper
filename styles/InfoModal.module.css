@@ -9,14 +9,15 @@ margin-left: auto;
 margin-right: auto;
 z-index: 5;
 padding: 1rem;
-background-color: rgb(248, 255, 255);
-box-shadow: -3px 3px 3px 3px rgba(202, 202, 202, 0.637);
+background-color: rgb(255, 250, 254);
+box-shadow: 0 0 3px 3px rgb(231, 227, 230);
+border-radius:1em;
 transition: 0.4s;
 display: none;
 
 }
 .modalClose{
-color:rgb(170, 170, 170) ;
+color:rgb(251, 187, 242) ;
 width: fit-content;
 height: fit-content;
 display: flex;
@@ -27,13 +28,13 @@ border-radius: 20em;
 position: absolute;
 right: 1%;
 top:2%;
-border: 1px solid rgb(170, 170, 170);
+border: 1px solid rgb(251, 187, 242);
 border-style: dashed;
 transition: 0.4s;
 }
 .modalClose:hover{
-color:rgb(145, 145, 145) ;
-border: 1px solid rgb(145, 145, 145);
+color:rgb(230, 55, 204) ;
+border: 1px solid rgb(230, 55, 204);
 border-style: dashed;
 transition: 0.4s;
 }
@@ -45,8 +46,13 @@ width: 80%;
 width: 100%;
 height: 2.5em;
 background-color: transparent;
-border: 1px solid rgba(56, 88, 84, 0.671);
+border: 1px solid rgba(238, 138, 228  );
 border-style: dashed;
+color:rgb(175, 91, 155);
+outline:none
+}
+.modal_inner_serach::placeholder{
+color:rgb(218, 169, 213)
 }
 .modal_inner_coinzInfo{
 height: 2.8em;
@@ -58,11 +64,12 @@ font-size: 1.5vw;
 font-weight: 500;
 margin-top: 0.5rem;
 padding: 0.4rem;
-border-top: 1px solid rgba(56, 88, 84, 0.671);
+border-top: 1px solid rgba(238, 138, 228 );
 border-bottom: 0px;
-border-left: 1px solid rgba(56, 88, 84, 0.671);
-border-right: 1px solid rgba(56, 88, 84, 0.671);
+border-left: 1px solid rgba(236, 99, 224);
+border-right: 1px solid rgba(236, 99, 224);
 border-style: dashed;
+
 }
 .modal_inner_imgCont{
     flex:0.1
@@ -74,38 +81,40 @@ border-style: dashed;
 }
 .modal_inner_gemName{
     flex:0.6;
-    color:rgb(56, 88, 84);
+    color:rgb(135, 100, 132);
 }
 .modal_inner_gemSymbol{
-color: rgba(56, 88, 84, 0.562);
+color: rgba(135, 100, 132);
 }
 .modal_inner_gemPrice{
     flex:0.3;
     text-align: right;
-    color:rgb(56, 88, 84);
+    color:rgb(135, 100, 132);
 }
 .modal_inner_textArea{
-color:rgb(56, 88, 84);
+color:rgb(175, 91, 155);
 width:100%;
 height: 6.5rem;
-border: 1px solid rgba(56, 88, 84, 0.671);
+border: 1px solid rgba(238, 138, 228);
 overflow-y: scroll;
 border-style: dashed;
+outline:none
 }
 .modal_inner_priceAlertz{
-color:rgb(56, 88, 84);
+color:rgb(175, 91, 155);
 width:100%;
 height: 2rem;
 font-size: 1.3vw;
 padding-left: 3%;
 padding-top: 0.5%;
 border-top: 0;
-border-bottom: 1px solid rgba(56, 88, 84, 0.671);
-border-left: 1px solid rgba(56, 88, 84, 0.671);
-border-right: 1px solid rgba(56, 88, 84, 0.671);
+border-bottom: 1px solid rgba(238, 138, 228);
+border-left: 1px solid rgba(238, 138, 228);
+border-right: 1px solid rgba(238, 138, 228);
 border-style: dashed;
 display:flex;
-align-items:center
+align-items:center;
+outline:none
 }
 .modal_inner_price{
 position: relative;
@@ -118,7 +127,8 @@ text-align: center;
 padding-left: 0.2rem;
 color:rgb(56, 88, 84);
 display: flex;
-align-items: center
+align-items: center;
+color:rgb(175, 91, 155)
 
 }
 .modal_inner_buttonCont{
@@ -127,8 +137,8 @@ margin-top: 1rem;
 }
 .modal_inner_button{
 background-color: transparent;
-border:1px solid rgba(56, 88, 84, 0.486);
-color: rgba(56, 88, 84, 0.486);
+border:1px solid rgba(238, 138, 228);
+color: rgb(238, 138, 228);
 border-style: dashed;
 width: 30%;
 height: 2.5rem;
@@ -136,8 +146,8 @@ font-size: 1em;
 transition: 0.4s;
 }
 .modal_inner_button:hover{
-color:rgb(56, 88, 84) ;
-border: 1px solid rgb(56, 88, 84);
+border: 1px solid rgb(230, 55, 204);
+color: rgb(230, 55, 204);
 border-style: dashed;
 transition: 0.4s;
 }
@@ -149,17 +159,17 @@ transition: 0.4s;
   
   /* Track */
   .modal_inner_textArea::-webkit-scrollbar-track {
-    background: #f1f1f1; 
+    background: rgb(255, 241, 254); 
   }
    
   /* Handle */
   .modal_inner_textArea::-webkit-scrollbar-thumb {
-    background: rgba(185, 206, 212, 0.836); 
+    background: rgba(251, 187, 242); 
   }
   
   /* Handle on hover */
   .modal_inner_textArea::-webkit-scrollbar-thumb:hover {
-    background: rgb(171, 222, 236); 
+    background: rgb(230, 55, 204); 
   }
   .modal_inner_textArea_constianer{
   position: relative;
@@ -168,7 +178,7 @@ transition: 0.4s;
   .modal_inner_LRcontrolBtns{
   position: absolute;
   font-size: 2em;
-  color:rgba(56, 88, 84, 0.315);
+  color:rgba(251, 187, 242);
   height: 50%;
   top:27%;
   bottom: 27%;
@@ -190,13 +200,14 @@ transition: 0.4s;
    }
 
    .modal_inner_LRcontrolBtns_L:hover,.modal_inner_LRcontrolBtns_R:hover{
-    color:rgba(56, 88, 84, 0.637);
+    color:rgba(230, 55, 204);
     transition: 0.4s;
    }
 
    @media screen and (max-width: 920px) {
     .modalContainer{
       width: 80%;
+	  height: 37vh;
       }
       .modal_inner{
         margin: auto;
@@ -231,7 +242,6 @@ transition: 0.4s;
         .modal_inner_LRcontrolBtns{
           position: absolute;
           font-size: 2em;
-          color:rgba(56, 88, 84, 0.315);
           height: 50%;
           top:27%;
           bottom: 27%;
@@ -249,6 +259,7 @@ transition: 0.4s;
 	  margin-left: 0;
       margin-right: 0;
 	  padding-top: 1rem;
+	  height:25em
       }
       .modal_inner{
         margin: auto;
@@ -286,7 +297,7 @@ transition: 0.4s;
         .modal_inner_LRcontrolBtns{
           position: absolute;
           font-size: 2.5em;
-          color:rgba(56, 88, 84, 0.315);
+          color:rgba(251, 187, 242);
           height: 50%;
           top:27%;
           bottom: 27%;
@@ -296,4 +307,24 @@ transition: 0.4s;
           display: flex;
           align-items: center;
           }
-   }
+		  .modal_inner_button{
+          width: 40%;
+          }
+		  .modalClose{
+          color:rgb(230, 55, 204) ;
+          width: fit-content;
+          height: fit-content;
+          display: flex;
+          justify-content: center;
+          align-content: center;
+          padding: 0.3rem;
+          border-radius: 20em;
+          position: absolute;
+          right: 1%;
+          top:2%;
+          border: 1px solid rgb(230, 55, 204);
+          border-style: dashed;
+          transition: 0.4s;
+          }
+
+          }

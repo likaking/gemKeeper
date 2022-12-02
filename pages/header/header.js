@@ -11,9 +11,9 @@ import Link from 'next/link'
 function Navbar(){
   const [toggle, setToggle] = useState(false)
 
-  const toggleMenu = ()=> {
-    !toggle ? setToggle(true) : setToggle(false);
-  }
+const toggleMenu = ()=> {
+    !toggle ? setToggle(true) : setToggle(false)
+	}
 
 
 return(
@@ -36,15 +36,14 @@ Gem Keeper
 </div>
 
 
-<div className={styles.nav_bar__mobileBtn} onClick={toggleMenu}><FaBars /></div>
-<div className={styles.nav_Mobilemenu} style={{display : toggle ? 'block' : 'none'}}>
-  <ul>
-  <li><a href = "#" className={styles.nav_bar__menu_aMobile}>Explore</a></li>
+<div className={styles.nav_bar__mobileBtn} onClick={toggleMenu}  style={{color : toggle ? 'rgb(238, 180, 228)' : 'rgb(231, 150, 219)'}}><FaBars /></div>
+<div className={toggle ? styles.nav_Mobilemenu_show :styles.nav_Mobilemenu} >
+<ul>
+<li><a href = "#" className={styles.nav_bar__menu_aMobile}>Explore</a></li>
 <li><a href = "#" className={styles.nav_bar__menu_aMobile}>Creator</a></li>
 <li><a href = "#" className={styles.nav_bar__menu_aMobile}>Market</a></li>
 <li><a href = "#" className={styles.nav_bar__menu_aMobile}>Community</a></li>
   </ul>
-  <div ><FaBattleNet className={styles.nav_Mobilemenu_battleNet} /></div>
   </div>
 
  </div>

@@ -25,14 +25,15 @@ setActiveCoins(getGems)
 
 const deletePriceAlert = async(deleteGem)=>{
 	await setPriceAlertzPing((priceAlerts)=> priceAlerts.filter((gem)=>{return gem.id !== deleteGem}))
-	UpdatePriceAlertStatus(deleteGem)
+	UpdatePriceAlertStatus(deleteGem);
+	setSearchGems('')
 	
 }
 
 return (
 <>
 <div className={openPriceALertsModal? styles.showPriceAlertz_ContianerShow : styles.showPriceAlertz_Contianer} >
-<div className={styles.showPriceAlertz_Header}><span>Target Price Alertz {priceAlertzPing.length}</span>
+<div className={styles.showPriceAlertz_Header}><span>Target Price Alertz :  {priceAlertzPing.length}</span>
 <div className={styles.showPriceAlertz_close}><FaTimes onClick = {()=>{setOpenPriceALertsModal(false);setSearchGems('')}}/></div>
 </div>
 <div  className={styles.showPriceAlertz_ListContainer}  style={{display: priceAlertzPing.length > 0 ? 'block' : 'none'}} >

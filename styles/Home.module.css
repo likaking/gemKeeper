@@ -108,8 +108,8 @@ width: 80%;
 height: 3rem;
 font-size: 1.5rem;
 float: left;
-border: 1px solid rgb(154, 194, 189);
-color: rgb(24, 102, 94);
+border: 1px solid rgb(247, 144, 229);
+color: rgb(202, 89, 183);
 box-shadow: 0 1px 1px 0 rgba(180, 180, 180, 0.2), 0 1px 1px 0 rgba(177, 177, 177, 0.19);
 outline: none;
 background-color: transparent;
@@ -120,7 +120,7 @@ margin-top:1rem;
 }
 
 .cmv_device_input::placeholder { /* Most modern browsers support this now. */
-    color:    rgb(24, 102, 94);
+    color:    rgb(221, 168, 212);
  }
  
 .cmv_device_search{
@@ -130,14 +130,14 @@ margin-top:1rem;
     font-size: 1rem;
     margin-bottom: 3vw;
     border: 0px solid rgb(94, 129, 139);
-    border-bottom:1px solid rgb(154, 194, 189) ;
-    color: rgb(24, 102, 94);
+    border-bottom:1px solid rgb(247, 144, 229) ;
+    color: rgb(202, 89, 183);
     outline: none;
     background-color: transparent;
     }
 
 .cmv_device_search::placeholder { /* Most modern browsers support this now. */
-    color:    rgb(24, 102, 94);
+    color:    rgb(221, 168, 212);
     }
 
 
@@ -149,17 +149,18 @@ float: right;
 padding: 0;
 border: 0;
 font-size: 1.2rem;
-color:rgb(239, 244, 247);
-background-color:rgb(58, 110, 131);
-background-image: -webkit-linear-gradient(rgb(84, 136, 156),rgba(17, 156, 149, 0.658));
+color:rgb(252, 230, 248);
+background-color:rgb(247, 144, 229);
+background-image: -webkit-linear-gradient(rgba(233, 102, 211, 0.575),rgba(196, 31, 133, 0.527));
 box-shadow: 0 1px 1px 0 rgba(180, 180, 180, 0.2), 0 1px 1px 0 rgba(177, 177, 177, 0.19);
+border-radius: 0rem 2rem 2rem 0rem;
 transition: .5s;
 }
 
 .cmv_device_grabBtn:hover{
-background-color: rgb(70, 126, 148);
-color:rgb(231, 255, 253);
-background-image: -webkit-linear-gradient(rgb(101, 149, 168),rgba(18, 156, 149, 0.651));
+color:rgb(252, 230, 248);
+background-color:rgb(247, 144, 229);
+background-image: -webkit-linear-gradient(rgba(233, 102, 211, 0.808),rgba(196, 31, 133, 0.815));
 transition-timing-function: ease-in-out;
 transition: .5s;
 }
@@ -213,10 +214,9 @@ display: flex;
 gap: 0.3rem;
 padding: 0.3rem;
 font-weight: 700;
-color: rgb(53, 51, 51);
+color: rgb(128, 88, 124);
 overflow: hidden;
 background-color: white;
-box-shadow: 0 1px 2px 0 rgba(180, 180, 180, 0.2), 0 2px 2px 0 rgba(177, 177, 177, 0.19);
 z-index: 1;
 }
 .cmv_device_result_img{
@@ -225,7 +225,7 @@ height: auto;
 
 }
 .cmv_device_addCoinResult_click{
-color: rgb(230, 230, 230);
+color: rgb(249, 233, 247);
 margin-left: auto;
 }
 .responsive_txt_brk{
@@ -238,13 +238,13 @@ display: none;
 display: none;
 }
 .main_cmv_totalGems{
-    width: 100%;
-    text-align: center;
-    padding-bottom: 0.5em;
-    font-size: 1.2em;
-    color: rgb(24, 102, 94);
-    font-weight: 500;
-    margin-top: 0vw;
+ width: 100%;
+ text-align: center;
+ padding-bottom: 0.5em;
+ font-size: 1.2em;
+ color: rgb(230, 94, 218);
+ font-weight: 500;
+ margin-top: 0vw;
 }
 .addCoin_contianerM{
 height: auto;
@@ -257,8 +257,6 @@ color: rgb(53, 51, 51);
 overflow: hidden;
 position: absolute;
 top: 100%;
-background-color: rgb(39, 69, 83);
-box-shadow: 0 1px 2px 0 rgba(180, 180, 180, 0.2), 0 2px 2px 0 rgba(177, 177, 177, 0.19);
 padding-bottom: 0em;
 z-index: 1;
 display: none;
@@ -269,12 +267,16 @@ height: 5em;
 resize: vertical;
 vertical-align:bottom;
 margin-top: 0.1em;
+border:1px solid rgb(243, 237, 242);
+outline:none;
 display: none;
 }
 .cmv_device_priceAlertz{
 height: 2.5em;
 width: 100%;
 vertical-align:bottom;
+border:1px solid rgb(243, 237, 242);
+outline:none;
 display: none;
 }
 
@@ -354,13 +356,13 @@ margin: auto;
 }   
 .cmv_device_input{
 width: 80%;
-height: 3rem;
+height: 4rem;
 font-size: 1.5rem;
 float: left;
 }
 .cmv_device_grabBtn{
 width: 20%; 
-height: 3rem; 
+height: 4rem; 
 float: right;
 padding: 0;
 font-size: 1.2rem;
@@ -374,11 +376,11 @@ font-size: 1rem;
 .cmv_device_grabBtn_errorContainer{
 }
 .responsive920_txt_brk{
-    display: block;
-    }
-    .main_cmv_totalGems{
-        padding-top: 8vw;
-    }
+display: block;
+}
+ .main_cmv_totalGems{
+padding-top: 8vw;
+}
 	
 .cmv_device_addNote{
 width: 100%;
@@ -464,13 +466,13 @@ margin: auto;
 }   
 .cmv_device_input{
 width: 80%;
-height: 2.5rem;
+height: 3rem;
 font-size: 1.2rem;
 float: left;
 }
 .cmv_device_grabBtn{
 width: 20%; 
-height: 2.5rem; 
+height:3rem; 
 float: right;
 padding: 0;
 font-size: 1rem;

@@ -3,9 +3,9 @@
 .footer{
     width: 100%;
     padding-top: 5vw;
-    margin-top: 40vw;
-    background-color: rgb(32, 70, 85);
-    background-image: -webkit-linear-gradient(rgb(68, 111, 128),rgba(11, 107, 102, 0.658));
+    margin-top: 20vw;
+    background-color: rgb(248, 52, 215);
+    background-image: -webkit-linear-gradient(rgb(248, 52, 215),rgb(192, 37, 192));
     position: relative;
 
     
@@ -43,7 +43,7 @@
     text-align: center;
     font-weight: 500;
     font-size: 1.2vw;
-    color: rgb(229, 237, 245);
+    color:rgb(252, 225, 247);
 }
 .footer_hr{
     width: 50%;
@@ -79,13 +79,13 @@
     flex-direction: column;
 }
 .footer_addressContacts2_hdr{
-    color: rgb(250, 246, 246);
+    color:rgb(252, 225, 247);
     font-weight: bold;
     padding-bottom: 1rem;
     font-size: 1em;
 }
 .footer_addressContacts2_2{
-    color: rgb(216, 216, 216);
+    color:rgb(252, 225, 247);
     font-size: 0.7em;
 }
 .footer_addressContacts2_tel{
@@ -105,7 +105,7 @@ padding-bottom: 0rem;
     flex: 1;
 }
 .footer_links_contianer >ul{
-    color: rgb(216, 216, 216); 
+    color:rgb(252, 225, 247);
     list-style: none;
     display: flex;
     font-size: 0.6em;
@@ -117,7 +117,7 @@ padding-bottom: 0rem;
 }
 
 .footer_Social{
-    color: rgb(216, 216, 216); 
+    color:rgb(252, 225, 247); 
     font-size: 0.6em;
     align-items: center;
     gap: 1.5vw;
@@ -145,11 +145,11 @@ padding-bottom: 0rem;
   
  }
  .footer_Social >ul>li :hover{
-color: rgb(184, 214, 228);
+color:rgb(243, 169, 229);
 transition: 0.4s;    
 }
  .copyRight{
-    color: rgb(216, 216, 216); 
+    color:rgb(252, 225, 247);
     font-size: 0.6em;
     width: 50%;
     margin: auto;
@@ -163,12 +163,11 @@ transition: 0.4s;
  bottom: 2%;
  background-color: rgba(19, 41, 51, 0);
  border: 0;
- color: rgb(243, 236, 236) ;
+ color: rgb(248, 52, 215) ;
  padding: 1.2% 1.2% 1% 1.2%;
  border-radius: 50%;
- border: 2px solid rgb(14, 48, 65);
+ border: 2px solid rgb(248, 52, 215);
  border-style: dashed;
- color: rgb(14, 48, 65);
  font-size: 1em;
  cursor: pointer;
  }

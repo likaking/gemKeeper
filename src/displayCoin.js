@@ -57,8 +57,8 @@ const tableHeader = useRef(null)
 
 
     const hoverIn = (i)=>{
-         container.current[i].style.backgroundColor = 'rgba(209, 231, 231, 0.384)'
-         containerL.current[i].style.backgroundColor = 'rgba(209, 231, 231, 0.384)'
+         container.current[i].style.backgroundColor = 'rgba(252, 207, 249, 0.164)'
+         containerL.current[i].style.backgroundColor = 'rgba(252, 207, 249, 0.164)'
     }
 
     const hoverOut = (i)=>{
@@ -73,13 +73,10 @@ const tableHeader = useRef(null)
 
 const Vip = (gem)=>{
 const getGem = activeCoins.map((coinz)=>{
-
     if(coinz.id === gem){
         return {...coinz, vip:coinz.vip === true ? false : true}
     }
-
    return coinz
-  
 })
 
 setActiveCoins(getGem)
@@ -103,7 +100,7 @@ useEffect(() => {
         };
 		
 useEffect(()=>{
-!sticky? tableHeader.current.style.borderBottom = '1px solid  rgba(154, 194, 189, 0.514)' : tableHeader.current.style.borderBottom = '0px'
+!sticky? tableHeader.current.style.borderBottom = '1px solid  rgba(238, 194, 238)' : tableHeader.current.style.borderBottom = '0px'
 	
 },[sticky])
 
@@ -121,7 +118,7 @@ return(
 <div className={styles.dipedCrypto_HL_name}><div>Name</div></div>
 {
     search? search.map((itemz,index)=> <div key={itemz.id+index} ref = {(el)=> containerL.current[index]=el}  onMouseEnter = {()=>hoverIn(index)} onMouseLeave = {()=>hoverOut(index)} 
-     className={styles.dipedCrypto_L_container}><div className={styles.dipedCrypto_L_Star_container}> <span ref={(el)=> star.current[index] = el} ><FaStar className={styles.dipedCrypto_L_Star} style = {{color:itemz.vip === true ? 'rgb(228, 161, 36)' :'rgb(207, 207, 207)'}}   onClick={()=>{Vip(itemz.id)}} /></span> </div>
+     className={styles.dipedCrypto_L_container}> <div className={styles.dipedCrypto_L_rank}><div></div> <div></div> <div>{'#'}{itemz.market_cap_rank}</div> </div>    <div className={styles.dipedCrypto_L_Star_container}> <span ref={(el)=> star.current[index] = el} ><FaStar className={styles.dipedCrypto_L_Star} style = {{color:itemz.vip === true ? 'rgb(243, 74, 243)' :'rgb(216, 189, 216)'}}   onClick={()=>{Vip(itemz.id)}} /></span> </div>
       <div className={styles.dipedCrypto_L_img_container}><a href={`https://www.coingecko.com/en/coins/${itemz.id}`} target='_blank' >
       <img src={itemz.image} alt = {itemz.id}  className={styles.dipedCrypto_L_img}  /></a> </div> 
       <div className={styles.dipedCrypto_L_id}><a href={`https://www.coingecko.com/en/coins/${itemz.id}`} target='_blank' ><span className={styles.dipedCrypto_L_id_span}>{itemz.id[0].toUpperCase() + itemz.id.slice(1).toLowerCase() }</span></a>{' '}<a href={`https://www.coingecko.com/en/coins/${itemz.id}`} target='_blank' ><span className={styles.dipedCrypto_L_symbol}>{itemz.symbol.toUpperCase()} </span></a> </div> </div>) : null

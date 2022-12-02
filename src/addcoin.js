@@ -21,6 +21,7 @@ const textArea  = useRef(null)
 const priceAlertz = useRef(null)
 const addCoinContainer = useRef(null)
 const addCoinForm = useRef(null)
+const addUrCoin = useRef(null)
 
 
 
@@ -92,6 +93,8 @@ const hideShowNotes = ()=>{
     textArea.current.value = ' '
     priceAlertz.current.value = ' '
 	addCoinForm.current.style.display = 'none'
+	setSearchGems('');
+	addUrCoin.current = ''
   }
 }
 hideShowNotes()
@@ -121,7 +124,7 @@ return(
  {
   addNewCoinData.length > 0 && addCoinInput.current.value !== '' && addNewCoinData.map((coin,i) =>
    i < 1 &&
-    <div key = {coin.id+i} className={styles.cmv_device_addCoinResult} onClick = {()=>{addCoin({id:coin.id,current_price:'',symbol:coin.symbol,name:coin.name,image:coin.image,price_change_24h:'',ath:coin.ath,atl:coin.atl,total_volume:'',vip:false,note:textArea.current.value,priceAlertz_active:priceAlertz.current.value.length === 0 ? false : true,priceAlertz:Number(priceAlertz.current.value),market_cap:coin.market_cap}); setAddNewCoinData([])}}><img src = {coin.image} key = {coin.image+i}  className={styles.cmv_device_result_img}/><div key = {coin.name+i}>{coin.name}</div><div className={styles.cmv_device_addCoinResult_click} >click 2 add</div></div>
+    <div key = {coin.id+i} ref = {addUrCoin} className={styles.cmv_device_addCoinResult} onClick = {()=>{addCoin({id:coin.id,current_price:'',symbol:coin.symbol,name:coin.name,image:coin.image,price_change_24h:'',ath:coin.ath,atl:coin.atl,total_volume:'',vip:false,note:textArea.current.value,priceAlertz_active:priceAlertz.current.value.length === 0 ? false : true,priceAlertz:Number(priceAlertz.current.value),market_cap:coin.market_cap,market_cap_rank:''}); setAddNewCoinData([])}}><img src = {coin.image} alt = {coin.name}  className={styles.cmv_device_result_img}/><div>{coin.name}</div><div className={styles.cmv_device_addCoinResult_click} >click 2 add</div></div>
     )
  }
  </div>
