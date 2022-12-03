@@ -19,13 +19,13 @@ const [currencyx, setCurrencyx] = useState('$')
 
 
 const removeAsset = async(asset)=>{
-    if(buy.indexOf(asset) !== -1){
-   const findIndexOfAsset = buy.indexOf(asset)
-   const filtered = new Promise((resolve,reject)=> {resolve(activeCoins.filter((remove)=>{
+  if(buy.indexOf(asset) !== -1){
+  const findIndexOfAsset = buy.indexOf(asset)
+  const filtered = new Promise((resolve,reject)=> {resolve(activeCoins.filter((remove)=>{
   return remove.id !== asset 
    }))});
    
-   let result = await filtered
+  let result = await filtered
   setActiveCoins(result);
   setBuy(buy.filter(del=>  del !== asset));
  
@@ -82,28 +82,23 @@ const getGem = activeCoins.map((coinz)=>{
 setActiveCoins(getGem)
 }
 
-
-
 useEffect(() => {
-    window.addEventListener('scroll', isSticky);
-    return () => {
-        window.removeEventListener('scroll', isSticky);
-    };
-});
-
-       
+window.addEventListener('scroll', isSticky);
+return () => {
+window.removeEventListener('scroll', isSticky);
+}
+})
+      
 /* Method that will fix header after a specific scrollable */
-       const isSticky = (e) => {
-            const scrollTop = window.scrollY;
-            scrollTop >= 250 ? setSticky(true): setSticky(false);
-            
-        };
+const isSticky = (e) => {
+const scrollTop = window.scrollY;
+scrollTop >= 250 ? setSticky(true): setSticky(false);
+};
 		
 useEffect(()=>{
 !sticky? tableHeader.current.style.borderBottom = '1px solid  rgba(238, 194, 238)' : tableHeader.current.style.borderBottom = '0px'
 	
 },[sticky])
-
 
 
 return(
@@ -113,18 +108,15 @@ return(
 
 
 <div className={styles.dipedCrypto_L} ref = {leftTable} id={shadow? styles.dipedCrypto_L_cont : ''}>
-
-
 <div className={styles.dipedCrypto_HL_name}><div>Name</div></div>
 {
     search? search.map((itemz,index)=> <div key={itemz.id+index} ref = {(el)=> containerL.current[index]=el}  onMouseEnter = {()=>hoverIn(index)} onMouseLeave = {()=>hoverOut(index)} 
-     className={styles.dipedCrypto_L_container}> <div className={styles.dipedCrypto_L_rank}><div></div> <div></div> <div>{'#'}{itemz.market_cap_rank}</div> </div>    <div className={styles.dipedCrypto_L_Star_container}> <span ref={(el)=> star.current[index] = el} ><FaStar className={styles.dipedCrypto_L_Star} style = {{color:itemz.vip === true ? 'rgb(243, 74, 243)' :'rgb(216, 189, 216)'}}   onClick={()=>{Vip(itemz.id)}} /></span> </div>
-      <div className={styles.dipedCrypto_L_img_container}><a href={`https://www.coingecko.com/en/coins/${itemz.id}`} target='_blank' >
-      <img src={itemz.image} alt = {itemz.id}  className={styles.dipedCrypto_L_img}  /></a> </div> 
-      <div className={styles.dipedCrypto_L_id}><a href={`https://www.coingecko.com/en/coins/${itemz.id}`} target='_blank' ><span className={styles.dipedCrypto_L_id_span}>{itemz.id[0].toUpperCase() + itemz.id.slice(1).toLowerCase() }</span></a>{' '}<a href={`https://www.coingecko.com/en/coins/${itemz.id}`} target='_blank' ><span className={styles.dipedCrypto_L_symbol}>{itemz.symbol.toUpperCase()} </span></a> </div> </div>) : null
+    className={styles.dipedCrypto_L_container}> <div className={styles.dipedCrypto_L_rank}><div></div> <div></div> <div>{'#'}{itemz.market_cap_rank}</div> </div>    <div className={styles.dipedCrypto_L_Star_container}> <span ref={(el)=> star.current[index] = el} ><FaStar className={styles.dipedCrypto_L_Star} style = {{color:itemz.vip === true ? 'rgb(243, 74, 243)' :'rgb(216, 189, 216)'}}   onClick={()=>{Vip(itemz.id)}} /></span> </div>
+    <div className={styles.dipedCrypto_L_img_container}><a href={`https://www.coingecko.com/en/coins/${itemz.id}`} target='_blank' >
+    <img src={itemz.image} alt = {itemz.id}  className={styles.dipedCrypto_L_img}  /></a> </div> 
+    <div className={styles.dipedCrypto_L_id}><a href={`https://www.coingecko.com/en/coins/${itemz.id}`} target='_blank' ><span className={styles.dipedCrypto_L_id_span}>{itemz.id[0].toUpperCase() + itemz.id.slice(1).toLowerCase() }</span></a>{' '}<a href={`https://www.coingecko.com/en/coins/${itemz.id}`} target='_blank' ><span className={styles.dipedCrypto_L_symbol}>{itemz.symbol.toUpperCase()} </span></a> </div> </div>) : null
 }
 </div>
-
 <div className={styles.dipedCrypto_R} ref={rightTable} onScroll={handleShadow}>
 <div className={styles.dipedCrypto_HR}><div className={styles.dipedCrypto_HR_price}>Price</div> <div className={styles.dipedCrypto_HR_priceCh}>24h P-Ch</div> <div className={styles.dipedCrypto_HR_24H}>ATH</div> <div className={styles.dipedCrypto_HR_7dh}>ATL</div> <div className={styles.dipedCrypto_HR_vol}>Volume 24</div> <div className={styles.dipedCrypto_HR_mktCap}>Market Cap</div> <div className={styles.dipedCrypto_HR_delInfo}></div> </div>
 {
