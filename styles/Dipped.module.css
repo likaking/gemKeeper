@@ -124,7 +124,7 @@
     color: rgba(143, 70, 131, 0.336);
     transition: .4s;
     display: flex;
-    text-align:right;
+    justify-content: right;
     vertical-align: baseline;   
     }
     .infoIcon:hover{
@@ -337,7 +337,12 @@
     text-align: right;
     }
     .deleteIcon{
-    flex: 0.06;
+	flex: 0.06;
+    color: rgba(143, 70, 131, 0.336);
+    transition: .4s;
+    display: flex;
+    justify-content: right;
+    vertical-align: baseline;
     font-size:2.5vw;
 	border:1px solid red;
     }
