@@ -131,7 +131,6 @@ return(
  <form >
  <textarea placeholder="Add Note..." className={styles.cmv_device_addNote} ref= {textArea}></textarea >
  <input type = 'number'  placeholder='Add Price alert!'  className={styles.cmv_device_priceAlertz} ref= {priceAlertz}  />
-
  </form>
  </div>
  </div>

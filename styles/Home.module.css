@@ -75,7 +75,6 @@ padding-bottom: 5vw;
 display: flex;
 justify-content: center;
 align-items: center;
-
 }
 .cmv_device_contianer{
 width: 60%;
@@ -206,9 +205,9 @@ background-color: white;
 z-index: 1;
 }
 .cmv_device_result_img{
-width: 30px;
+width: 40px;
 height: auto;
-
+padding-right:0.5rem
 }
 .cmv_device_addCoinResult_click{
 color: rgb(249, 233, 247);
@@ -246,6 +245,9 @@ top: 100%;
 padding-bottom: 0em;
 z-index: 1;
 display: none;
+background-color:white;
+box-shadow: 0px 14px 22px -8px rgba(0,0,0,0.1);
+border:0px solid red
 }
 .cmv_device_addNote{
 width: 100%;
@@ -255,7 +257,6 @@ vertical-align:bottom;
 margin-top: 0.1em;
 border:1px solid rgb(243, 237, 242);
 outline:none;
-display: none;
 }
 .cmv_device_priceAlertz{
 height: 2.5em;
@@ -355,16 +356,14 @@ font-size: 1rem;
 .responsive920_txt_brk{
 display: block;
 }
- .main_cmv_totalGems{
+.main_cmv_totalGems{
 padding-top: 8vw;
-}
-	
+}	
 .cmv_device_addNote{
 width: 100%;
 height: 8em;
 vertical-align:bottom;
 margin-top: 0.1em;
-display: none;
 }
 .cmv_device_priceAlertz{
 height: 2.5em;
@@ -397,6 +396,7 @@ margin: auto;
 display: flex;
 justify-content: center;
 align-items: center;
+padding:0.5rem;
 }
 .banner_div_L{
 flex: 0.4;
@@ -475,7 +475,6 @@ width: 100%;
 height: 8em;
 vertical-align:bottom;
 margin-top: 0.1em;
-display: none;
 }
 .cmv_device_priceAlertz{
 height: 2.5em;
@@ -488,9 +487,9 @@ display: none;
 
 
 @media screen and (max-width: 430px) {
-    .cmvBody{
-        padding-top: 1rem;
-        }
+.cmvBody{
+padding-top: 1rem;
+}
 .banner{
 flex-direction: column;
 padding-left: 0rem;
@@ -511,49 +510,47 @@ margin: auto;
 display: flex;
 justify-content: center;
 align-items: center;
+padding:0.5rem;
 }
 
 .banner_div_L{
-    flex: 0.4;
-    }
-    .banner_div_R{
-    flex: 0.31;
-    
-    }
-    .banner_div_REnd{
-    flex: 0.29; 
-    position: relative;
-    background-image: -webkit-linear-gradient(rgb(23, 143, 143),rgb(29, 105, 124));
-    background-image: url('/mobilebg.png');
-    border-top-right-radius: 10em;
-    border-radius: 0em 0em 0em 0em;
-  
-    overflow: hidden;
-    
-    }
+flex: 0.4;
+}
+.banner_div_R{
+flex: 0.31;
+}
+.banner_div_REnd{
+flex: 0.29; 
+position: relative;
+background-image: -webkit-linear-gradient(rgb(23, 143, 143),rgb(29, 105, 124));
+background-image: url('/mobilebg.png');
+border-top-right-radius: 10em;
+border-radius: 0em 0em 0em 0em;
+overflow: hidden;
+}
 .banner_div_L_hdr{
-    line-height: 80%;
-    margin-top: 10%;
-    text-shadow: 1px 1px rgba(150, 207, 229, 0.349);
-    padding-left: 0.2em;
-    }
-    .banner_div_L_hdr2{
-    font-size: 10vw;
-    line-height: 100%;
-    padding: 0;
-    margin: 0;
-    padding-left: 0.2em;  
-    }
-    .banner_div_L_subhdr{
-    text-shadow: 1px 1px rgba(120, 182, 207, 0.247);
-    font-size: 4vw;
-    padding-left: 0.5em;
-    }
-    .banner_div_L_P{
-    font-size: 1.1em;
-    text-shadow: 1px 1px rgba(124, 187, 212, 0.329);
-    display: none;
-    }
+line-height: 80%;
+margin-top: 10%;
+text-shadow: 1px 1px rgba(150, 207, 229, 0.349);
+padding-left: 0.2em;
+}
+.banner_div_L_hdr2{
+font-size: 10vw;
+line-height: 100%;
+padding: 0;
+margin: 0;
+padding-left: 0.2em;  
+}
+.banner_div_L_subhdr{
+text-shadow: 1px 1px rgba(120, 182, 207, 0.247);
+font-size: 4vw;
+padding-left: 0.5em;
+}
+.banner_div_L_P{
+font-size: 1.1em;
+text-shadow: 1px 1px rgba(124, 187, 212, 0.329);
+display: none;
+}
 .cmv_device_contianer{
 width: 98%;
 margin: auto;
@@ -581,10 +578,10 @@ font-size: 0.8rem;
 display: none;
 }
 .banner_div_ImgM{
-    display: block;
-    width: 100%;
-    height: 100%;
-    }
+display: block;
+width: 100%;
+height: 100%;
+}
 }
 
 
