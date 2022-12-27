@@ -62,8 +62,7 @@ const addCoin = (coin)=>{
      
         axios.get(grabUrl).then((res)=>{setAddNewCoinData([...res.data])}).catch((err)=>{showNetWorkErr()})
         }
-       
-       };
+        };
 
        const hideShowAddCoinErr = ()=>{
         if(addNewCoin){

@@ -124,7 +124,7 @@
     color: rgba(143, 70, 131, 0.336);
     transition: .4s;
     display: flex;
-    justify-content: right;
+    text-align:right;
     vertical-align: baseline;   
     }
     .infoIcon:hover{
