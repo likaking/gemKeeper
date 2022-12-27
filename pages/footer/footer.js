@@ -66,18 +66,20 @@ export default function Footer() {
       <div className={styles.footer}>
 
         <div className={styles.footer_logo}>
-          <div className={styles.footer_logo1}></div>
-          <div className={styles.footer_logo2}>
-          <span className={styles.footer_CompName}>Gem Keeper</span></div>
-          <div className={styles.footer_logo3}></div>
+        <div className={styles.footer_logo1}></div>
+        <div className={styles.footer_logo2}>
+		<Link href = '/'><a ><span className={styles.footer_CompName}>Gem Keeper</span></a></Link>
+          
+		</div>
+        <div className={styles.footer_logo3}></div>
         </div>
         <div className={styles.footer_addressContacts}>
           
         </div>
-       <div className={styles.footer_hr}></div>
-       <div className={styles.footer_links}>
+        <div className={styles.footer_hr}></div>
+        <div className={styles.footer_links}>
         <div className={styles.footer_links_contianer}>
-          <ul>
+        <ul>
             <Link href = '' scroll = {false}><li> About </li></Link>
             <Link href = '' scroll = {false}><li>Menu </li></Link>
             <Link href = '' scroll = {false}><li>Blog </li></Link>
@@ -90,7 +92,7 @@ export default function Footer() {
         <ul className={styles.footer_ul}>
             <li> <FaFacebook /> </li>
             <li> <FaTwitter /> </li>
-           <li> <FaTiktok /> </li>
+            <li> <FaTiktok /> </li>
             <li> <FaYoutube /> </li>  
           </ul>
         </div>

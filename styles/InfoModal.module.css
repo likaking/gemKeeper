@@ -9,7 +9,7 @@ margin-left: auto;
 margin-right: auto;
 z-index: 5;
 padding: 1rem;
-background-color: rgb(255, 250, 254);
+background-color: white;
 box-shadow: 0 0 3px 3px rgb(231, 227, 230);
 border-radius:1em;
 transition: 0.4s;

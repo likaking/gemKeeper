@@ -20,11 +20,11 @@ return(
 <>
 <div className={styles.nav_bar}>
 <div className={styles.nav_bar__logo}>
-<Link href = '/#'><a ><img src = {'/logo.png'} alt = 'logo' loading = "" className={styles.nav_bar__logo_icon} /></a></Link>
+<Link href = '/'><a ><img src = {'/logo.png'} alt = 'Gem Keeper logo' loading = "" className={styles.nav_bar__logo_icon} /></a></Link>
 </div>
 
 <div className={styles.nav_bar__compName}>
-Gem Keeper
+<Link href = '/'><a >Gem Keeper</a></Link>
 </div>
 <div className={styles.nav_bar__wraper}>
 <ul className={styles.nav_bar__menu}>

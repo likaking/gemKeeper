@@ -12,14 +12,14 @@
     }
     .dipedCrypto_L_container{
     display: flex;
-    height: 3.5em;
+    height: 4.5em;
     padding: 0.5em 0.5em 0.5em 1em;
     gap: 5%;
     justify-content: flex-start;
     align-items: center;
     border-bottom: 1px solid  rgb(238, 194, 238);
     transition: 0.4s;
-	position:relative
+    position:relative
     }
     .dipedCrypto_L_img_container{
     flex:0.15;
@@ -63,7 +63,7 @@
     
     .dipedCrypto_R_container{
     display: flex;
-    height: 3.5em;
+    height: 4.5em;
     padding: 0.5em;
     gap:0%;
     justify-content: flex-start;
@@ -153,7 +153,6 @@
     padding-bottom: 0px;
     display: flex;
     }
-
     .tableHeader{
      width: 98%;
      margin: auto;
@@ -162,8 +161,6 @@
      border-bottom: 1px solid  rgb(238, 194, 238);
      color: rgb(138, 84, 129);
     }
-  
-
     .tableHeader :nth-child(1){
     flex: 0.04;
     font-weight: 700;
@@ -274,14 +271,12 @@
     width: 98%;
     margin-top: 4vw;
     position: relative;
-
     }
     .dipedCrypto_L_container{
     display: flex;
     height: 5em;
     padding: 0.5em 0.5em 0.5em 1em;
-    gap: 10%;
-    justify-content: flex-start;
+    justify-content: space-around;
     align-items: center;
     transition: 0.4s; 
     }
@@ -377,13 +372,13 @@
     flex: 0.25;
     text-align: right;
     }
-	.dipedCrypto_HR_mktCap{
-	flex: 0.267;
-	text-align: right;
-	}	
-	.dipedCrypto_HR_delInfo{
-	flex: 0.135;
-	}
+    .dipedCrypto_HR_mktCap{
+    flex: 0.267;
+    text-align: right;
+    }	
+    .dipedCrypto_HR_delInfo{
+    flex: 0.135;
+    }
     .dipedCrypto_L_img_container{
     flex:0.2;     
     }
@@ -393,7 +388,7 @@
     }
     .dipedCrypto_L_id{
     font-weight: 500;
-    flex:0.8;     
+    flex:0.68;     
     }          
     .dipedCrypto_L_Star{
     flex:0.1;
@@ -419,7 +414,7 @@
    box-shadow: 10px 0 5px -6px rgba(184, 184, 184, 0.473);
    transition: 0.4s;
    }   
-   	.dipedCrypto_L_rank{
+   .dipedCrypto_L_rank{
     display:flex;
     position:absolute;
     font-size:0.8em;
@@ -441,16 +436,15 @@
     @media screen and (max-width: 550px) {
    .dipedCrypto_L_container{
     display: flex;
-    height: 4em;
+    height: 5em;
     padding: 0.5em 0.5em 0.5em 0.3em;
-    gap: 10%;
-    justify-content: flex-start;
+    justify-content: space-around;
     align-items: center;
     transition: 0.4s;      
     }
     .dipedCrypto_R_container{
     display: flex;
-    height: 4em;
+    height: 5em;
     padding: 0.5em;
     gap:0%;
     justify-content: flex-start;
@@ -577,7 +571,7 @@
     font-size:3.5vw;
 	font-weight: 700;
     }
-	.dipedCrypto_L_rank{
+    .dipedCrypto_L_rank{
     display:flex;
     position:absolute;
     font-size:0.7em;
@@ -589,21 +583,20 @@
    flex:0.15;
    }
    .dipedCrypto_L_rank :nth-child(2){
-   flex:0.35;
+   flex:0.32;
    }
     .dipedCrypto_L_rank :nth-child(3){
-   flex:0.5;
+   flex:0.53;
 
    }
-    }
+   }
     
    @media screen and (max-width: 430px) {
    .dipedCrypto_L_container{
     display: flex;
     height: 4em;
     padding: 0.5em 0.5em 0.5em 0.3em;
-    gap: 10%;
-    justify-content: flex-start;
+    justify-content: space-around;
     align-items: center;
     transition: 0.4s;      
     }
@@ -712,7 +705,7 @@ text-align: right;
 flex: 0.135;
 }
 .dipedCrypto_L_img_container{
-flex:0.3;      
+flex:0.25;      
 }
 .dipedCrypto_L_img{
 width: 100%;
@@ -720,7 +713,7 @@ height: 100%;
 }
 .dipedCrypto_L_id{
 font-weight: 500;
-flex:0.6;
+flex:0.5;
 color: rgb(29, 27, 27);
 }
 .dipedCrypto_L_symbol{
@@ -736,24 +729,23 @@ font-size: 4vw;
 font-size:3.5vw;
 font-weight: 800; 
 }       
-	.dipedCrypto_L_rank{
-    display:flex;
-    position:absolute;
-    font-size:0.7em;
-    color: rgb(164, 167, 168);
-    top:5%;
-    width:100%;
-   }
-   .dipedCrypto_L_rank :nth-child(1){
-   flex:0.15;
-   }
-   .dipedCrypto_L_rank :nth-child(2){
-   flex:0.35;
-   }
-    .dipedCrypto_L_rank :nth-child(3){
-   flex:0.5;
-
-   }
+.dipedCrypto_L_rank{
+display:flex;
+position:absolute;
+font-size:0.7em;
+color: rgb(164, 167, 168);
+top:5%;
+width:100%;
+}
+.dipedCrypto_L_rank :nth-child(1){
+flex:0.15;
+}
+.dipedCrypto_L_rank :nth-child(2){
+flex:0.39;
+}
+.dipedCrypto_L_rank :nth-child(3){
+flex:0.47;
+}
 }  
 @media screen and (max-width: 300px) {
 

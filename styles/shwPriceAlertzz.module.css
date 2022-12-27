@@ -1,82 +1,79 @@
 .showPriceAlertz_Contianer{
-	position:absolute;
-	top:-70%;
-	width:100%;
-	height:50%;
-	background-color: rgb(241, 111, 202);
-	transition: 0.50s;
-	 -webkit-backface-visibility: hidden;
- -webkit-perspective: 1000;
- -webkit-transform: translate3d(0,0,0);
- -webkit-transform: translateZ(0);
- backface-visibility: hidden;
- perspective: 1000;
- transform: translate3d(0,0,0);
- transform: translateZ(0);
-
-
+position:absolute;
+top:-70%;
+width:100%;
+height:50%;
+background-color: rgb(241, 111, 202);
+transition: 0.50s;
+-webkit-backface-visibility: hidden;
+-webkit-perspective: 1000;
+-webkit-transform: translate3d(0,0,0);
+-webkit-transform: translateZ(0);
+backface-visibility: hidden;
+perspective: 1000;
+transform: translate3d(0,0,0);
+transform: translateZ(0);
 }
 .showPriceAlertz_ContianerShow{
-	position:absolute;
-	top:-5%;
-	width:100%;
-	height:50%;
-	background-color: rgb(241, 111, 202);
-    box-shadow: -3px 3px 3px 3px rgba(235, 162, 213, 0.493);
-	transition: 0.50s;
-	 -webkit-backface-visibility: hidden;
- -webkit-perspective: 1000;
- -webkit-transform: translate3d(0,0,0);
- -webkit-transform: translateZ(0);
- backface-visibility: hidden;
- perspective: 1000;
- transform: translate3d(0,0,0);
- transform: translateZ(0);
- z-index:5
+position:absolute;
+top:-5%;
+width:100%;
+height:50%;
+background-color: rgb(241, 111, 202);
+box-shadow: -3px 3px 3px 3px rgba(235, 162, 213, 0.493);
+transition: 0.50s;
+-webkit-backface-visibility: hidden;
+-webkit-perspective: 1000;
+-webkit-transform: translate3d(0,0,0);
+-webkit-transform: translateZ(0);
+backface-visibility: hidden;
+perspective: 1000;
+transform: translate3d(0,0,0);
+transform: translateZ(0);
+z-index:5
 }
 .showPriceAlertz_Header{
-	text-align:center;
-	font-size: 1.5em;
-	font-weight:500;
-	margin-top:4.7rem;
-	padding:0.5rem;
-    color: rgb(248, 230, 243);
-	position: relative
+text-align:center;
+font-size: 1.5em;
+font-weight:500;
+margin-top:5rem;
+padding:0.5rem;
+color: white;
+position: relative
 }
 .showPriceAlertz_close{
-	position:absolute;
-	top:35%;
-	right: 1%;
-	font-size: 0.8em;
-	color:rgb(224, 18, 163);
-	transition: .4s;
+position:absolute;
+top:30%;
+right: 1%;
+font-size: 0.8em;
+color:white;
+transition: .4s;
 }
 .showPriceAlertz_close:hover{
-	color:rgb(243, 204, 232);	
-	transition: .4s;
+color:rgb(243, 204, 232);	
+transition: .4s;
 }
 .showPriceAlertz_ListContainer{
-    width: 70%;
-	height:62%;
-	margin: auto;
-	overflow-X: hidden;
-	overflow-Y : scroll;
-	scroll-behavior: smooth;
+width: 70%;
+height:62%;
+margin: auto;
+overflow-X: hidden;
+overflow-Y : scroll;
+scroll-behavior: smooth;
 }
 
 .showPriceAlertz_ListCont_PriceAlertz{
-   display:flex;
-   align-items: center;
-   justify-content:left;
-   width:100%;
-   height:3.3em;
-   padding-right:0.2rem;
-   gap:2%;
-   border: 1px solid rgb(253, 169, 229);
-   color:rgb(255, 241, 251) ;
-   padding:0.3rem;
-   position:relative;
-   transition:.4s;
+display:flex;
+align-items: center;
+justify-content:space-around;
+width:100%;
+height:3.3em;
+padding-right:2rem;
+border: 1px solid rgb(253, 169, 229);
+border-radius:0.5rem;
+color:rgb(255, 241, 251) ;
+position:relative;
+transition:.4s;
 }
 
 .showPriceAlertz_ListCont_PriceAlertz:nth-last-child(n){
@@ -84,42 +81,42 @@ margin-bottom: 0.3rem;
 }
 
 .showPriceAlertz_ListCont_PriceAlertz:hover{
-   /*background-color: rgb(240, 71, 192);*/
-   color:rgb(255, 246, 252) ;
-   border: 1px solid rgb(252, 220, 243);
-   border-style: dashed;
-   transition:.4s
+ /*background-color: rgb(240, 71, 192);*/
+ color:rgb(255, 246, 252) ;
+ border: 1px solid rgb(252, 220, 243);
+ border-style: dashed;
+ transition:.4s
 }
 .showPriceAlertz_ListCont_PriceAlertz_img{
-  flex:0.07;
-  height: 80%;
-  width:auto;
+ flex:0.07;
+ height: 80%;
+ width:auto;
 }
 .showPriceAlertz_ListCont_PriceAlertz_img > img{
-  width: auto;
-  height: 100%;
-  vertical-align: bottom
+ width: auto;
+ height: 100%;
+ vertical-align: bottom
 }
 
 .showPriceAlertz_ListCont_PriceAlertz_des{
-  flex:0.85;
-  overflow-X:hidden;
-  font-size: 1.1em
+ flex:0.9;
+ overflow-X:hidden;
+ font-size: 1.1em
 }
 
 .showPriceAlertz_ListCont_delIcon{
-	flex:0.08;
-	color:rgb(248, 167, 222);
-	transition: .4s;
-	display: flex;
-	align-items: center;
-	justify-content:right;
-	position:absolute;
-	right:1%
+flex:0.08;
+color:rgb(248, 167, 222);
+transition: .4s;
+display: flex;
+align-items: center;
+justify-content:right;
+position:absolute;
+right:1%
 }
 .showPriceAlertz_ListCont_delIcon:hover{
-	color:rgb(247, 203, 233);
-	transition: .4s;
+color:rgb(247, 203, 233);
+transition: .4s;
 }
 /* width */
 .showPriceAlertz_ListContainer::-webkit-scrollbar {
@@ -144,189 +141,153 @@ margin-bottom: 0.3rem;
 
 
 @media screen and (max-width: 920px) {
-   .showPriceAlertz_Contianer{
-	height:35%;	
+.showPriceAlertz_Contianer{
+height:35%;	
 }
 .showPriceAlertz_ContianerShow{
-	height:35%;
+height:35%;
 }
 .showPriceAlertz_Header{
-	margin-top:15%;
+margin-top:16%;
 }
 .showPriceAlertz_close{
-	top:32%;
+top:32%;
 }
 .showPriceAlertz_ListContainer{
-    width: 100%;
-	height:58%;
+width: 100%;
+height:58%;
 }
 .showPriceAlertz_ListCont_PriceAlertz{
-   height:3.5rem;
-}
-
-	
+height:3.5rem;
+}	
 }
 @media screen and (max-width: 830px) {
-   .showPriceAlertz_Contianer{
-	height:35%;	
+.showPriceAlertz_Contianer{
+height:35%;	
 }
 .showPriceAlertz_ContianerShow{
-	height:35%;
+height:35%;
 }
 .showPriceAlertz_Header{
-	margin-top:14%;
+margin-top:14%;
 }
 .showPriceAlertz_close{
-	top:32.5%;
+top:32.5%;
 }
 .showPriceAlertz_ListContainer{
-    width: 100%;
-	height:58%;
+width: 100%;
+height:58%;
 }
 .showPriceAlertz_ListCont_PriceAlertz{
-   height:3.7rem;
+height:3.7rem;
 }
 }
 @media screen and (max-width: 780px) {
 .showPriceAlertz_Contianer{
-	height:35%;	
+height:35%;	
 }
 .showPriceAlertz_ContianerShow{
-	height:35%;
+height:35%;
 }
 .showPriceAlertz_Header{
-	margin-top:13%;
+margin-top:13%;
 }
 .showPriceAlertz_close{
-	top:31%;
+top:31%;
+font-size: 1em;
 }
 .showPriceAlertz_ListContainer{
-    width: 100%;
-	height:55%;
+width: 100%;
+height:55%;
 }	
 .showPriceAlertz_ListCont_PriceAlertz{
-   height:3.9rem;
+height:3.9rem;
 }
 }
 
 @media screen and (max-width: 550px) {
 .showPriceAlertz_Contianer{
-	position:absolute;
-	width:100%;
-	height:47%;
+position:absolute;
+width:100%;
+height:47%;
 }
 .showPriceAlertz_ContianerShow{
-	height:47%;
+height:47%;
 }
 .showPriceAlertz_Header{
-	text-align:center;
-	font-size: 4vw;
-	font-weight:500;
-	margin-top:7rem;
-	padding:0.5rem;
-	position: relative
+text-align:center;
+font-size: 4vw;
+font-weight:500;
+margin-top:7rem;
+padding:0.5rem;
+position: relative
 }
 .showPriceAlertz_close{
-	position:absolute;
-	top:35%;
-	right: 1%;
-	font-size: 0.8em;
-	transition: .4s;
+position:absolute;
+top:25%;
+right: 1%;
+font-size: 1em;
+transition: .4s;
 }
 .showPriceAlertz_close:hover{
-	color:rgb(56, 88, 84);	
-	transition: .4s;
+color:rgb(56, 88, 84);	
+transition: .4s;
 }
 .showPriceAlertz_ListContainer{
-    width: 100%;
-	height:51%;
-    overflow: scroll;
-	overflow-X:scroll 
+width: 100%;
+height:51%;
+overflow: scroll;
+overflow-X:scroll 
 }
 .showPriceAlertz_ListContainer{
 -ms-overflow-style: none;
 scrollbar-width: none;
 }
 .showPriceAlertz_ListCont_PriceAlertz{
-   height:3.5rem;
-   width: 130%; 
+height:3.5rem;
+width: 130%; 
 }
 }
 
 @media screen and (max-width: 430px) {
 .showPriceAlertz_Contianer{
-	position:absolute;
-	width:100%;
-	height:20em;	
+position:absolute;
+width:100%;
+height:25em;	
+
 }
 .showPriceAlertz_ContianerShow{
-	height:20em;
+height:25em;
+
 }
 .showPriceAlertz_Header{
-	text-align:center;
-	font-size: 4vw;
-	font-weight:500;
-	margin-top:7rem;
-	padding:0.5rem;
-	position: relative
+text-align:center;
+font-size: 4vw;
+font-weight:500;
+margin-top:7rem;
+padding:0.5rem;
+position: relative
 }
 .showPriceAlertz_close{
-	position:absolute;
-	top:33%;
-	right: 1%;
-	font-size: 0.8em;
-	transition: .4s;
+position:absolute;
+top:23%;
+right: 1%;
+font-size: 1em;
+transition: .4s;
 }
 .showPriceAlertz_close:hover{
-	color:rgb(56, 88, 84);	
-	transition: .4s;
+color:rgb(56, 88, 84);	
+transition: .4s;
 }
 .showPriceAlertz_ListContainer{
-    width: 100%;
-	height:10.5em;
-	margin: auto;
-	overflow-X:scroll
+width: 100%;
+height:16em;
+margin: auto;
+padding:0.2rem;
+overflow-X:scroll
 }
 .showPriceAlertz_ListCont_PriceAlertz{
-   height:3.5rem;
-   width: 140%;
-}
-}
-@media screen and (max-width: 390px) {
-.showPriceAlertz_Contianer{
-	position:absolute;
-	width:100%;
-	height:18em;
-}
-.showPriceAlertz_ContianerShow{
-	height:18em;
-}
-.showPriceAlertz_Header{
-	text-align:center;
-	font-size: 4vw;
-	font-weight:500;
-	margin-top:6.3rem;
-	padding:0.2rem;
-	position: relative
-}
-.showPriceAlertz_close{
-	position:absolute;
-	top:33%;
-	right: 1%;
-	font-size: 0.8em;
-	color:rgba(56, 88, 84, 0.384);
-	transition: .4s;
-}
-.showPriceAlertz_close:hover{
-	color:rgb(56, 88, 84);	
-	transition: .4s;
-}
-.showPriceAlertz_ListContainer{
-    width: 100%;
-	height:9.5em;
-	margin: auto;
-}
-.showPriceAlertz_ListCont_PriceAlertz{
-   height:3.5rem;
+height:3.5rem;
+width: 140%;
 }
 }

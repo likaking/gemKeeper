@@ -89,9 +89,9 @@
     font-size: 0.7em;
 }
 .footer_addressContacts2_tel{
-    color: rgb(214, 67, 67);
-    font-size: 0.87em;
-    font-weight: bold;
+color: rgb(214, 67, 67);
+font-size: 0.87em;
+font-weight: bold;
 }
 .footer_links{
 width: 50%;
@@ -102,60 +102,55 @@ padding-bottom: 0rem;
 }
 
 .footer_links_contianer{
-    flex: 1;
+flex: 1;
 }
 .footer_links_contianer >ul{
-    color:rgb(252, 225, 247);
-    list-style: none;
-    display: flex;
-    font-size: 0.6em;
-    gap: 1.5vw;
-    margin-top: 0.75vw;
-    padding: 0;
-    cursor: pointer;
-   
+color:rgb(252, 225, 247);
+list-style: none;
+display: flex;
+font-size: 0.6em;
+align-items: center;
+justify-content:space-around;
+margin-top: 0.75vw;
+padding: 0;
+cursor: pointer;  
 }
 
 .footer_Social{
-    color:rgb(252, 225, 247); 
-    font-size: 0.6em;
-    align-items: center;
-    gap: 1.5vw;
-    cursor: pointer;
-    flex: 1;  
-    z-index: 3;
-   
+color:rgb(252, 225, 247); 
+font-size: 0.6em;
+align-items: center;
+justify-content:space-around;
+cursor: pointer;
+flex: 1;  
+z-index: 3;  
 }
 .footer_Social >ul{
-   list-style: none;
-   display: flex; 
-   margin: 0;
-   padding: 0;
-   gap: 1.5vw;
-   padding-left: 6.2em;
-
+list-style: none;
+display: flex; 
+align-items: center;
+justify-content:space-around;
+margin: 0;
+padding: 0;
+padding-left: 6.2em;
 }
 .footer_ul{
-   margin-left: auto; 
+margin-left: auto; 
 }
 .footer_Social >ul>li{
-   font-size: 2vw;
-   transition: 0.4s;
-  
-  
- }
+font-size: 2vw;
+transition: 0.4s;
+}
  .footer_Social >ul>li :hover{
 color:rgb(243, 169, 229);
 transition: 0.4s;    
 }
  .copyRight{
-    color:rgb(252, 225, 247);
-    font-size: 0.6em;
-    width: 50%;
-    margin: auto;
-    padding-bottom: 1rem;
-    
- 
+color:rgb(252, 225, 247);
+font-size: 0.6em;
+width: 50%;
+margin: auto;
+padding-bottom: 1rem;
  }
  .upButton{
  position: fixed;

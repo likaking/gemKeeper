@@ -55,7 +55,6 @@ const tableHeader = useRef(null)
 
     };
 
-
     const hoverIn = (i)=>{
          container.current[i].style.backgroundColor = 'rgba(252, 207, 249, 0.164)'
          containerL.current[i].style.backgroundColor = 'rgba(252, 207, 249, 0.164)'
@@ -68,8 +67,6 @@ const tableHeader = useRef(null)
 
    const search = activeCoins.filter((item)=>{
     return item.symbol.includes(searchGems.toLowerCase())});
-
-
 
 const Vip = (gem)=>{
 const getGem = activeCoins.map((coinz)=>{
@@ -129,8 +126,8 @@ return(
     <div className={styles.dipedCrypto_R_container_24hChange}> {currencyx}{itemz.ath >= 1 ? Number(itemz.ath): Number(itemz.ath).toFixed(3)} </div>
     <div className={styles.dipedCrypto_R_container_7d}>{currencyx}{itemz.atl >= 1 ? Number(itemz.atl): Number(itemz.atl).toFixed(3) }</div>
     <div className={styles.dipedCrypto_R_container_volume}>{currencyx}{itemz.total_volume.toLocaleString()}</div>
-	<div className={styles.dipedCrypto_R_container_mktCap}>{currencyx}{itemz.market_cap.toLocaleString()}</div>
-	<div className={styles.infoIcon}> <FaInfoCircle  onClick={()=>{setOpenModal(true);setModalSearch(itemz.symbol);setStartModal(true);setIndex(realInex)}} />  </div> <div className={styles.deleteIcon}><FaTrashAlt onClick={()=>{removeAsset(itemz.id)}}/> </div>  </div>)}) : null
+    <div className={styles.dipedCrypto_R_container_mktCap}>{currencyx}{itemz.market_cap.toLocaleString()}</div>
+    <div className={styles.infoIcon}> <FaInfoCircle  onClick={()=>{setOpenModal(true);setModalSearch(itemz.symbol);setStartModal(true);setIndex(realInex)}} />  </div> <div className={styles.deleteIcon}><FaTrashAlt onClick={()=>{removeAsset(itemz.id)}}/> </div>  </div>)}) : null
 }
 </div>
 </div>

@@ -15,8 +15,8 @@
     box-shadow: 0 1px 2px 0 rgba(102, 102, 102, 0.2), 0 2px 2px 0 rgba(105, 105, 105, 0.19);
     }
     .nav_bar__logo{
-    width: auto;
-    height:60%;
+    width: 3.5%;
+    height:auto;
     position: relative;
     }
     .nav_bar__logo_icon{
@@ -58,22 +58,25 @@
     .nav_bar__wraper{
       margin-left: auto;
       padding-right: 0.8em;
+	  flex:0.3;
     }
     .nav_bar__menu{
     list-style-type: none;
     margin: 0;
     padding-top: 0%;
-    overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: space-around;
     flex-direction: row;
     text-decoration: none;
-    gap: 25px;	
     font-size: 1vw;
     padding-bottom: 0.2vw;
     }
-    .nav_bar__menu_a {
+	.nav_bar__menu >li{
+
+
+	}
+    .nav_bar__menu_a{
     color: rgb(252, 209, 248);
     text-align: center;
     text-decoration: none;
@@ -85,51 +88,40 @@
       display: none;
     }
      .nav_Mobilemenu{
-          position: absolute;
-          color: rgb(255, 218, 247);
-          width: 85%;
-          height: 94vh;
-          right: -95%;
-          top: 101%;
-          padding: 1em;
-          background-color:  rgb(248, 52, 215);
-          overflow: hidden;
-          background-image: -webkit-linear-gradient(rgb(247, 144, 229),rgb(243, 74, 243));
-          z-index: 2;
-          border-radius: 2vw 0vw 0vw 2vw;
-          transition: 0.20s;
-        } 
+      position: absolute;
+      color: rgb(255, 218, 247);
+      width: 85%;
+      height: 94vh;
+      right: -95%;
+      top: 101%;
+      padding: 1em;
+      background-color:  rgb(248, 52, 215);
+      overflow: hidden;
+      background-image: -webkit-linear-gradient(rgb(247, 144, 229),rgb(243, 74, 243));
+      z-index: 2;
+      border-radius: 2vw 0vw 0vw 2vw;
+      transition: 0.20s;
+      } 
     
    
     
     @media screen and (max-width: 930px) {
       .nav_bar{
-        height: 5.2vh;
+        height: 5em;
         position: fixed;
         top: 0;
         }
       .nav_bar__logo{
-        width: auto;
-        height:70%;
+        width: 7%;
+        height:auto;
         position: relative;
         }
         .nav_bar__logo_icon{
         width:100%; 
         height: 100%;
         }
-        .nav_bar__login{
-          width: 10vw;
-          height: 100%;
-          }
-          .nav_bar__login_btn{
-          font-size: 1.6vw ;
-          width: 100%;
-          height: 100%;
-          color: rgb(197, 196, 197);
-          border: 1px solid rgb(197, 196, 197);
-          background-color: transparent;
-          }
-           .nav_Mobilemenu{
+       
+          .nav_Mobilemenu{
           position: absolute;
           color: rgb(255, 218, 247);
           width: 85%;
@@ -143,9 +135,36 @@
           z-index: 2;
           border-radius: 2vw 0vw 0vw 2vw;
           transition: 0.20s;
-        }  
-       
-    }
+		  display: none
+         }  
+		
+		 .nav_bar__menu{
+         list-style-type: none;
+         margin: 0;
+         padding-top: 0%;
+         display: flex;
+         align-items: center;
+         justify-content: space-around;
+         flex-direction: row;
+         text-decoration: none;
+         font-size: 2vw;
+         padding-bottom: 0.2vw;
+         }
+	    .nav_bar__wraper{
+         margin-left: auto;
+         padding-right: 0.8em;
+	     flex:0.6;
+         }
+		 .nav_bar__compName{
+         width:auto;
+         font-size: 3vw;
+         font-weight:500;
+         margin-left:0.7rem;
+         color:rgb(252, 225, 247);
+         padding-bottom: 0.3%;
+         text-shadow: 1px 1px rgba(133, 144, 148, 0.205);
+         }
+         }
     
     @media screen and (max-width: 550px) {
       .nav_bar{
@@ -161,8 +180,8 @@
         padding-left: 1.5vw;
         }
         .nav_bar__logo{
-        width: auto;
-        height:60%;
+        width: 10%;
+        height:auto;
         position: relative;
         }
         .nav_bar__logo_icon{
@@ -245,6 +264,8 @@
           perspective: 1000;
           transform: translate3d(0,0,0);
           transform: translateZ(0);
+		  box-shadow: -8px 0px 22px -3px rgba(0,0,0,0.1);
+		  
         }  
         .nav_Mobilemenu{
           position: absolute;
@@ -327,8 +348,8 @@
         justify-content: flex-start;
         }
         .nav_bar__logo{
-        width: auto;
-        height:60%;
+        width: 11%;
+        height:auto;
         position: relative;
         }
         .nav_bar__logo_icon{
@@ -399,8 +420,6 @@
         .nav_bar__mobileBtn :hover{
    
         }
-       
-      
         .nav_Mobilemenu ul li:hover{
           color:  rgb(255, 247, 255);
         }    
@@ -411,7 +430,6 @@
           text-decoration: none;
           color: inherit;
         }
-    
-    }
+        }
     
     
