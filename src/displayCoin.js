@@ -93,7 +93,7 @@ scrollTop >= 250 ? setSticky(true): setSticky(false);
 };
 		
 useEffect(()=>{
-!sticky? tableHeader.current.style.borderBottom = '1px solid  rgba(238, 194, 238)' : tableHeader.current.style.borderBottom = '0px'
+!sticky? tableHeader.current.style.borderBottom = '1px solid  rgba(238, 194, 238, 0.329)' : tableHeader.current.style.borderBottom = '0px'
 	
 },[sticky])
 

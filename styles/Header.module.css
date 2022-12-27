@@ -107,7 +107,7 @@
     
     @media screen and (max-width: 930px) {
       .nav_bar{
-        height: 5em;
+        height: 4em;
         position: fixed;
         top: 0;
         }
@@ -121,22 +121,22 @@
         height: 100%;
         }
        
-          .nav_Mobilemenu{
-          position: absolute;
-          color: rgb(255, 218, 247);
-          width: 85%;
-          height: 94vh;
-          right: -95%;
-          top: 101%;
-          padding: 1em;
-          background-color:  rgb(248, 52, 215);
-          overflow: hidden;
-          background-image: -webkit-linear-gradient(rgb(247, 144, 229),rgb(243, 74, 243));
-          z-index: 2;
-          border-radius: 2vw 0vw 0vw 2vw;
-          transition: 0.20s;
-		  display: none
-         }  
+        .nav_Mobilemenu{
+        position: absolute;
+        color: rgb(255, 218, 247);
+        width: 85%;
+        height: 94vh;
+        right: -95%;
+        top: 101%;
+        padding: 1em;
+        background-color:  rgb(248, 52, 215);
+        overflow: hidden;
+        background-image: -webkit-linear-gradient(rgb(247, 144, 229),rgb(243, 74, 243));
+        z-index: 2;
+        border-radius: 2vw 0vw 0vw 2vw;
+        transition: 0.20s;
+		display: none
+        }  
 		
 		 .nav_bar__menu{
          list-style-type: none;
@@ -147,7 +147,7 @@
          justify-content: space-around;
          flex-direction: row;
          text-decoration: none;
-         font-size: 2vw;
+         font-size: 1.6vw;
          padding-bottom: 0.2vw;
          }
 	    .nav_bar__wraper{
@@ -157,7 +157,7 @@
          }
 		 .nav_bar__compName{
          width:auto;
-         font-size: 3vw;
+         font-size: 2.5vw;
          font-weight:500;
          margin-left:0.7rem;
          color:rgb(252, 225, 247);

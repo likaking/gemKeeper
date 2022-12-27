@@ -99,7 +99,7 @@ export default function Footer() {
        <button className={styles.upButton} onClick = {scrollToTop} style={{display: visible ? 'inline' : 'none'}}><FaArrowUp /></button>
        
        </div>
-       <div className={styles.copyRight}><FaCopyright /> {dateBuilder(new Date())} Gem Keeper</div>
+       <div className={styles.copyRight}><FaCopyright /> {dateBuilder(new Date())} <span><Link href = '/' target = '_blank'><a > Gem Keeper</a></Link> </span></div>
       </div>
       
 

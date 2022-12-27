@@ -142,7 +142,7 @@ font-size: 2vw;
 transition: 0.4s;
 }
  .footer_Social >ul>li :hover{
-color:rgb(243, 169, 229);
+color:rgb(107, 34, 94);
 transition: 0.4s;    
 }
  .copyRight{
@@ -268,13 +268,12 @@ padding-bottom: 1rem;
     color: rgb(216, 216, 216); 
     list-style: none;
     display: flex;
-    font-size: 3vw;
+    font-size: 2vw;
     justify-content: space-around;
     margin: 0;
     padding: 1vw;
     margin-top: 0.65vw;
-    cursor: pointer;
-		
+    cursor: pointer;	
     }
     .footer_Social{
     color: rgb(216, 216, 216); 
@@ -297,32 +296,24 @@ padding-bottom: 1rem;
     .footer_ul{
     }
     .footer_Social >ul>li{
-       font-size: 2em;
-       transition: 0.4s;
-         
-     }
-     .footer_Social >ul>li :hover{
-        color: rgb(235, 117, 21);
-        transition: 0.4s;
-        
+    font-size: 1.2em;
+    transition: 0.4s;   
     }
-     .copyRight{
-        color: rgb(216, 216, 216); 
-        font-size: 1em;
-        width: 80%;
-        margin: auto;
-        padding-bottom: 1rem;
-        text-align: center;
-        
-     }
+  
+    .copyRight{
+    color: rgb(216, 216, 216); 
+    font-size: 1em;
+    width: 80%;
+    margin: auto;
+    padding-bottom: 1rem;
+    text-align: center; 
+    }
      .upButton{
      position: fixed;
      right: 2vw;
      border: 0;
-     color: rgb(243, 236, 236) ;
-     border: 2px solid rgb(14, 48, 65);
+     border: 2px solid rgb(248, 52, 215);
      border-style: dashed;
-     color: rgb(14, 48, 65);
      padding: 1.5% 1.7% 0.7% 1.5%;
      border-radius: 50%;
      font-size: 1.5em;
@@ -427,68 +418,60 @@ padding-bottom: 1rem;
         }
         
         .footer_links_contianer{
-            flex: 1;
+        flex: 1;
         }
         .footer_links_contianer >ul{
-            color: rgb(216, 216, 216); 
-            list-style: none;
-            display: flex;
-            font-size: 3.2vw;
-            gap: 1.8vw;
-            margin: 0;
-            padding: 0;
-            cursor: pointer;
+        color: rgb(216, 216, 216); 
+        list-style: none;
+        display: flex;
+        font-size: 3.2vw;
+        gap: 1.8vw;
+        margin: 0;
+        padding: 0;
+        cursor: pointer;
         }
-        
-        
+		.footer_links_contianer >ul>li{
+         font-size: 3vw;
+        }
         .footer_Social{
-            color: rgb(216, 216, 216); 
-            font-size: 1em;
-            align-items: right;
-            gap: 1.5vw;
-            cursor: pointer;
-            flex: 1;
+        color: rgb(216, 216, 216); 
+        font-size: 1em;
+        align-items: right;
+        gap: 1.5vw;
+        cursor: pointer;
+        flex: 1;
         }
         .footer_Social >ul{
-           list-style: none;
-           display: flex; 
-           margin: 0;
-           padding: 0;
-           gap: 1.5vw;
-           margin-left: 0;
-           
+        list-style: none;
+        display: flex; 
+        margin: 0;
+        padding: 0;
+        gap: 1.5vw;
+        margin-left: 0;   
         }
         .footer_ul{
            margin-left: auto; 
         }
         .footer_Social >ul>li{
-           font-size: 2em;
-           transition: 0.4s;
-             
+        font-size: 2em;
+        transition: 0.4s;   
          }
-         .footer_Social >ul>li :hover{
-            color: rgb(235, 117, 21);
-            transition: 0.4s;
-            
-        }
          .copyRight{
-            color: rgb(216, 216, 216); 
-            font-size: 0.9em;
-            width: 80%;
-            margin: auto;
-            padding-bottom: 3rem;
-            padding-top: 1rem;
-            text-align: center;
+         color: rgb(216, 216, 216); 
+         font-size: 0.9em;
+         width: 80%;
+         margin: auto;
+         padding-bottom: 3rem;
+         padding-top: 1rem;
+         text-align: center;
          }
          .upButton{
          position: fixed;
          right: 2vw;
          top: 85%;
-         color: rgb(243, 236, 236) ;
-
-        border: 2px solid rgb(14, 48, 65);
+         color: rgb(248, 52, 215) ;
+         border: 2px solid rgb(248, 52, 215);
          border-style: dashed;
-         color: rgb(14, 48, 65);
          padding: 1% 0% 0% 0%;
          width:9vw;
          height: 9vw;
@@ -496,7 +479,7 @@ padding-bottom: 1rem;
          font-size: 5vw;
          cursor: pointer;
          }
-    }
+         }
 
     @media screen and (max-width: 420px) {  
         .footer_logo2{
@@ -521,10 +504,7 @@ padding-bottom: 1rem;
         }
        
     }
-    @media screen and (max-width: 770px) {  
-       
-       
-    }
+ 
 
 
 

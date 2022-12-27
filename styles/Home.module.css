@@ -205,12 +205,12 @@ background-color: white;
 z-index: 1;
 }
 .cmv_device_result_img{
-width: 40px;
+width: 50px;
 height: auto;
-padding-right:0.5rem
+padding: 0.5rem 0.5rem 0.5rem 0.2rem
 }
 .cmv_device_addCoinResult_click{
-color: rgb(249, 233, 247);
+color: rgb(250, 200, 244);
 margin-left: auto;
 }
 .responsive_txt_brk{
@@ -256,6 +256,7 @@ resize: vertical;
 vertical-align:bottom;
 margin-top: 0.1em;
 border:1px solid rgb(243, 237, 242);
+padding:0.5vw;
 outline:none;
 }
 .cmv_device_priceAlertz{
@@ -263,6 +264,7 @@ height: 2.5em;
 width: 100%;
 vertical-align:bottom;
 border:1px solid rgb(243, 237, 242);
+padding:0.5vw;
 outline:none;
 display: none;
 }
@@ -334,13 +336,13 @@ margin: auto;
 }   
 .cmv_device_input{
 width: 80%;
-height: 4rem;
+height: 3rem;
 font-size: 1.5rem;
 float: left;
 }
 .cmv_device_grabBtn{
 width: 20%; 
-height: 4rem; 
+height: 3rem; 
 float: right;
 padding: 0;
 font-size: 1.2rem;
@@ -363,12 +365,14 @@ padding-top: 8vw;
 width: 100%;
 height: 8em;
 vertical-align:bottom;
+padding:0.5vw;
 margin-top: 0.1em;
 }
 .cmv_device_priceAlertz{
 height: 2.5em;
 width: 100%;
 vertical-align:bottom;
+padding:0.5vw;
 display: none;
 }
 }
@@ -474,12 +478,14 @@ display: none;
 width: 100%;
 height: 8em;
 vertical-align:bottom;
+padding:0.5vw;
 margin-top: 0.1em;
 }
 .cmv_device_priceAlertz{
 height: 3em;
 width: 100%;
 vertical-align:bottom;
+padding:0.5vw;
 display: none;
 }
 }
@@ -581,6 +587,20 @@ display: none;
 display: block;
 width: 100%;
 height: 100%;
+}
+.cmv_device_addNote{
+width: 100%;
+height: 8em;
+vertical-align:bottom;
+padding:2vw;
+margin-top: 0.1em;
+}
+.cmv_device_priceAlertz{
+height: 3em;
+width: 100%;
+vertical-align:bottom;
+padding:2vw;
+display: none;
 }
 }
 

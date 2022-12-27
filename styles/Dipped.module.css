@@ -17,7 +17,7 @@
     gap: 5%;
     justify-content: flex-start;
     align-items: center;
-    border-bottom: 1px solid  rgb(238, 194, 238);
+    border-bottom: 1px solid  rgba(238, 194, 238, 0.329);
     transition: 0.4s;
     position:relative
     }
@@ -68,7 +68,7 @@
     gap:0%;
     justify-content: flex-start;
     align-items: center;
-    border-bottom: 1px solid  rgb(238, 194, 238);
+    border-bottom: 1px solid  rgba(238, 194, 238, 0.329);
     color: rgb(168, 56, 150);
     transition: 0.4s;
     }
@@ -135,7 +135,7 @@
     padding: 0.5em;
     font-weight: 700;
     border-bottom: 1px solid  rgb(238, 194, 238);
-    color: rgb(138, 84, 129);
+    color:rgb(168, 56, 150);
     display: none;
     }
 
@@ -157,7 +157,7 @@
      margin: auto;
      display: flex;
      padding: 0.5em;
-     border-bottom: 1px solid  rgb(238, 194, 238);
+     border-bottom: 1px solid  rgba(238, 194, 238, 0.329);
      color: rgb(168, 56, 150);
     }
     .tableHeader :nth-child(1){
@@ -214,8 +214,8 @@
     display: flex;
     padding: 0.5em;
     font-weight: 700;
-    border-bottom: 1px solid  rgb(238, 194, 238);
-    color: rgb(138, 84, 129);
+    border-bottom: 1px solid  rgba(238, 194, 238, 0.329);
+    color: rgb(168, 56, 150);
     display: none;
     }
     
@@ -299,7 +299,7 @@
 	word-break: normal
     }
 	.dipedCrypto_L_img_container{
-    flex:0.2;     
+    flex:0.15;     
 	margin-right:3vw;
 	margin-left:2vw;
     }
@@ -309,13 +309,13 @@
     }
     .dipedCrypto_L_id{
     font-weight: 500;
-    flex:0.7;     
+    flex:0.75;     
     }          
     .dipedCrypto_L_Star{
     flex:0.1;
     }
     .dipedCrypto_L_Star_container{
-    font-size: 3vw;
+    font-size: 2.5vw;
     }
     .dipedCrypto_R{
     padding-left: 0em;
@@ -412,7 +412,7 @@
    font-size:2vw;
    padding-top:0.5rem;
    padding-bottom:0.5rem;
-   padding-left: 8vw;
+   padding-left: 6vw;
    display: block;
    }
 
@@ -431,10 +431,10 @@
    flex:0.1;
    }
    .dipedCrypto_L_rank :nth-child(2){
-   flex:0.31;
+   flex:0.27;
    }
    .dipedCrypto_L_rank :nth-child(3){
-   flex:0.59;
+   flex:0.53;
    }
    }
     
@@ -573,8 +573,12 @@
     font-size: 4vw;
     }
     .dipedCrypto_HL_name{
-    font-size:3.5vw;
-	font-weight: 700;
+    display:flex;
+    font-size:2vw;
+    padding-top:0.5rem;
+    padding-bottom:0.5rem;
+    padding-left: 7vw;
+    display: block;
     }
     .dipedCrypto_L_rank{
     display:flex;
