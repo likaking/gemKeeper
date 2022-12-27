@@ -340,10 +340,15 @@
     .deleteIcon{
     flex: 0.06;
     font-size:2.5vw;
+	text-align: center;
+	border:1px solid red;
     }
     .infoIcon{
     flex: 0.07;
-    font-size:2.5vw  
+    font-size:2.5vw;
+	text-align: right;
+	border:1px solid red;
+	
     }
     .dipedCrypto_HR{
     display: flex;
@@ -388,7 +393,7 @@
     }
     .dipedCrypto_L_id{
     font-weight: 500;
-    flex:0.68;     
+    flex:0.62;     
     }          
     .dipedCrypto_L_Star{
     flex:0.1;
@@ -426,10 +431,10 @@
    flex:0.1;
    }
    .dipedCrypto_L_rank :nth-child(2){
-   flex:0.3;
+   flex:0.34;
    }
     .dipedCrypto_L_rank :nth-child(3){
-   flex:0.6;
+   flex:0.56;
    }
    }
     
@@ -594,7 +599,7 @@
    @media screen and (max-width: 430px) {
    .dipedCrypto_L_container{
     display: flex;
-    height: 4em;
+    height: 5em;
     padding: 0.5em 0.5em 0.5em 0.3em;
     justify-content: space-around;
     align-items: center;
@@ -602,7 +607,7 @@
     }
     .dipedCrypto_R_container{
     display: flex;
-    height: 4em;
+    height: 5em;
     padding: 0.5em;
     gap:0%;
     justify-content: flex-start;
@@ -612,7 +617,7 @@
     .dipedCrypto_L{
     display: flex;
     flex-direction: column;
-    flex:0.4     
+    flex:0.45  
     }
     .dipedCrypto_L_id_span{
     display: none;
@@ -622,7 +627,7 @@
     }
     .dipedCrypto_R{
     padding-left: 0em;
-    flex:0.6;
+    flex:0.55;
     }
     .dipedCrypto_HR{
        width: 350%;
@@ -705,7 +710,7 @@ text-align: right;
 flex: 0.135;
 }
 .dipedCrypto_L_img_container{
-flex:0.25;      
+flex:0.22;      
 }
 .dipedCrypto_L_img{
 width: 100%;
@@ -720,7 +725,7 @@ color: rgb(29, 27, 27);
 color: rgb(138, 84, 129);
 }
 .dipedCrypto_L_Star{
-flex:0.1;        
+flex:0.13;        
 }
 .dipedCrypto_L_Star_container{
 font-size: 4vw;

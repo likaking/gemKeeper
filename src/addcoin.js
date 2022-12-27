@@ -125,13 +125,13 @@ return(
   addNewCoinData.length > 0 && addCoinInput.current.value !== '' && addNewCoinData.map((coin,i) =>
    i < 1 &&
     <div key = {coin.id+i} ref = {addUrCoin} className={styles.cmv_device_addCoinResult} onClick = {()=>{addCoin({id:coin.id,current_price:'',symbol:coin.symbol,name:coin.name,image:coin.image,price_change_24h:'',ath:coin.ath,atl:coin.atl,total_volume:'',vip:false,note:textArea.current.value,priceAlertz_active:priceAlertz.current.value.length === 0 ? false : true,priceAlertz:Number(priceAlertz.current.value),market_cap:coin.market_cap,market_cap_rank:''}); setAddNewCoinData([])}}><img src = {coin.image} alt = {coin.name}  className={styles.cmv_device_result_img}/><div>{coin.name}</div><div className={styles.cmv_device_addCoinResult_click} >click 2 add</div></div>
-    )
+ )
  }
  </div>
  <div ref={addCoinForm} style={{display:'none'}} >
  <form >
- <textarea placeholder='Add Note' className={styles.cmv_device_addNote} ref= {textArea}></textarea >
- <input type = 'number'  placeholder='Price alert! - Remind me if price get to'  className={styles.cmv_device_priceAlertz} ref= {priceAlertz}  />
+ <textarea placeholder='Add Price alert!'   className={styles.cmv_device_addNote} ref= {textArea}></textarea >
+ <input type = 'number'  placeholder='Add Price alert!'  className={styles.cmv_device_priceAlertz} ref= {priceAlertz}  />
  </form>
  </div>
  </div>
