@@ -81,16 +81,16 @@ useEffect(()=>{
 const hideShowNotes = ()=>{
 
   if(addNewCoinData.length > 0 && addNewCoin.length > 0 && addCoinInput.current.value !== ''){
-    textArea.current.style.display = 'block'
+    //textArea.current.style.display = 'block'
     priceAlertz.current.style.display = 'block'
     addCoinContainer.current.style.display = 'block'
 	addCoinForm.current.style.display = 'block'
   }
   else{
-    textArea.current.style.display = 'none'
+    //textArea.current.style.display = 'none'
     priceAlertz.current.style.display = 'none'
     addCoinContainer.current.style.display = 'none'
-    textArea.current.value = ' '
+    //textArea.current.value = ' '
     priceAlertz.current.value = ' '
 	addCoinForm.current.style.display = 'none'
 	setSearchGems('');
@@ -130,8 +130,9 @@ return(
  </div>
  <div ref={addCoinForm} style={{display:'none'}} >
  <form >
- <textarea placeholder='Add Price alert!'   className={styles.cmv_device_addNote} ref= {textArea}></textarea >
+ <textarea placeholder="Add Note..." className={styles.cmv_device_addNote} ref= {textArea}></textarea >
  <input type = 'number'  placeholder='Add Price alert!'  className={styles.cmv_device_priceAlertz} ref= {priceAlertz}  />
+
  </form>
  </div>
  </div>
