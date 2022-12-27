@@ -23,7 +23,6 @@
     }
     .dipedCrypto_L_img_container{
     flex:0.15;
-   
     }
     .dipedCrypto_L_img{
     width: 75%;
@@ -33,11 +32,12 @@
     .dipedCrypto_L_id{
     font-weight: 500;
     flex:0.75;
-    color: rgb(143, 70, 131);
-    word-break: normal
+    color: rgb(168, 56, 150);
+	word-break: normal
     }
     .dipedCrypto_L_symbol{
-    color: rgb(173, 148, 169);
+     color: rgb(196, 122, 184);
+	 word-break: normal
     }
     .dipedCrypto_L_Star_container{
     flex:0.1;
@@ -69,7 +69,7 @@
     justify-content: flex-start;
     align-items: center;
     border-bottom: 1px solid  rgb(238, 194, 238);
-    color: rgb(138, 84, 129);
+    color: rgb(168, 56, 150);
     transition: 0.4s;
     }
     .dipedCrypto_R_container:hover{
@@ -109,26 +109,26 @@
     .deleteIcon{
     flex: 0.06;
     text-align: right;
-    color: rgba(143, 70, 131, 0.336);
+    color: rgba(168, 56, 150, 0.336);
     transition: .4s;
     display: flex;
     align-items: center;
     justify-content: flex-end;
     }
     .deleteIcon:hover{
-    color: rgba(143, 70, 131, 0.849);
+    color: rgb(168, 56, 150);
     transition: .4s;
     }
     .infoIcon{
     flex: 0.07;
-    color: rgba(143, 70, 131, 0.336);
+    color: rgba(168, 56, 150, 0.336);
     transition: .4s;
     display: flex;
     justify-content: right;
     vertical-align: baseline;   
     }
     .infoIcon:hover{
-    color: rgba(143, 70, 131, 0.849);
+    color: rgb(168, 56, 150);
     transition: .4s;
     }
     .dipedCrypto_HL_name{
@@ -158,7 +158,7 @@
      display: flex;
      padding: 0.5em;
      border-bottom: 1px solid  rgb(238, 194, 238);
-     color: rgb(138, 84, 129);
+     color: rgb(168, 56, 150);
     }
     .tableHeader :nth-child(1){
     flex: 0.04;
@@ -249,7 +249,7 @@
     display:flex;
     position:absolute;
     font-size:0.7em;
-    color: rgb(164, 167, 168);
+    color: rgba(168, 56, 150, 0.736);
     top:5%;
     width:100%;
    }
@@ -295,7 +295,27 @@
     flex:0.4     
     }
     .dipedCrypto_L_id_span{
-    display: block;
+  
+	word-break: normal
+    }
+	.dipedCrypto_L_img_container{
+    flex:0.2;     
+	margin-right:3vw;
+	margin-left:2vw;
+    }
+    .dipedCrypto_L_img{
+    width: 100%;
+    height: 100%;            
+    }
+    .dipedCrypto_L_id{
+    font-weight: 500;
+    flex:0.7;     
+    }          
+    .dipedCrypto_L_Star{
+    flex:0.1;
+    }
+    .dipedCrypto_L_Star_container{
+    font-size: 3vw;
     }
     .dipedCrypto_R{
     padding-left: 0em;
@@ -344,7 +364,6 @@
     }
     .infoIcon{
 	flex: 0.07;
-    color: rgba(143, 70, 131, 0.336);
 	font-size:2.5vw;
     transition: .4s;
     display: flex;
@@ -384,27 +403,7 @@
     }	
     .dipedCrypto_HR_delInfo{
     flex: 0.135;
-    }
-    .dipedCrypto_L_img_container{
-    flex:0.2;     
-	margin-right:3vw;
-	margin-left:2vw;
-    }
-    .dipedCrypto_L_img{
-    width: 100%;
-    height: 100%;            
-    }
-    .dipedCrypto_L_id{
-    font-weight: 500;
-    flex:0.7;     
-    }          
-    .dipedCrypto_L_Star{
-    flex:0.1;
-    }
-    .dipedCrypto_L_Star_container{
-    font-size: 3.5vw;
-    }
-    
+    }   
    .tableHeader{
     display: none
     }
@@ -415,7 +414,6 @@
    padding-bottom:0.5rem;
    padding-left: 8vw;
    display: block;
-   color: rgb(138, 84, 129);
    }
 
    #dipedCrypto_L_cont{
@@ -426,7 +424,6 @@
     display:flex;
     position:absolute;
     font-size:0.8em;
-    color: rgb(164, 167, 168);
     top:5%;
     width:100%;
    }
@@ -434,10 +431,10 @@
    flex:0.1;
    }
    .dipedCrypto_L_rank :nth-child(2){
-   flex:0.32;
+   flex:0.31;
    }
-    .dipedCrypto_L_rank :nth-child(3){
-   flex:0.58;
+   .dipedCrypto_L_rank :nth-child(3){
+   flex:0.59;
    }
    }
     
@@ -583,7 +580,6 @@
     display:flex;
     position:absolute;
     font-size:0.7em;
-    color: rgb(164, 167, 168);
     top:5%;
     width:100%;
    }
@@ -625,7 +621,7 @@
     display: none;
     }
     .dipedCrypto_L_symbol{
-    color: rgb(138, 84, 129);
+	color: rgb(168, 56, 150);
     }
     .dipedCrypto_R{
     padding-left: 0em;
@@ -721,10 +717,7 @@ height: 100%;
 .dipedCrypto_L_id{
 font-weight: 500;
 flex:0.67;
-color: rgb(29, 27, 27);
-}
-.dipedCrypto_L_symbol{
-color: rgb(138, 84, 129);
+color: rgb(168, 56, 150);
 }
 .dipedCrypto_L_Star{
 flex:0.13;        
@@ -740,7 +733,6 @@ font-weight: 800;
 display:flex;
 position:absolute;
 font-size:0.7em;
-color: rgb(164, 167, 168);
 top:5%;
 width:100%;
 }

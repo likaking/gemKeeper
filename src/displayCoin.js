@@ -107,11 +107,12 @@ return(
 <div className={styles.dipedCrypto_L} ref = {leftTable} id={shadow? styles.dipedCrypto_L_cont : ''}>
 <div className={styles.dipedCrypto_HL_name}><div>Name</div></div>
 {
-    search? search.map((itemz,index)=> <div key={itemz.id+index} ref = {(el)=> containerL.current[index]=el}  onMouseEnter = {()=>hoverIn(index)} onMouseLeave = {()=>hoverOut(index)} 
-    className={styles.dipedCrypto_L_container}> <div className={styles.dipedCrypto_L_rank}><div></div> <div></div> <div>{'#'}{itemz.market_cap_rank}</div> </div>    <div className={styles.dipedCrypto_L_Star_container}> <span ref={(el)=> star.current[index] = el} ><FaStar className={styles.dipedCrypto_L_Star} style = {{color:itemz.vip === true ? 'rgb(243, 74, 243)' :'rgb(216, 189, 216)'}}   onClick={()=>{Vip(itemz.id)}} /></span> </div>
+    search? search.map((itemz,index)=> 
+	<div key={itemz.id+index} ref = {(el)=> containerL.current[index]=el}  onMouseEnter = {()=>hoverIn(index)} onMouseLeave = {()=>hoverOut(index)} 
+	className={styles.dipedCrypto_L_container}> <div className={styles.dipedCrypto_L_rank}><div></div> <div></div> <div>{'#'}{itemz.market_cap_rank}</div> </div>    <div className={styles.dipedCrypto_L_Star_container}> <span ref={(el)=> star.current[index] = el} ><FaStar className={styles.dipedCrypto_L_Star} style = {{color:itemz.vip === true ? 'rgb(243, 74, 243)' :'rgb(216, 189, 216)'}}   onClick={()=>{Vip(itemz.id)}} /></span> </div>
     <div className={styles.dipedCrypto_L_img_container}><a href={`https://www.coingecko.com/en/coins/${itemz.id}`} target='_blank' >
     <img src={itemz.image} alt = {itemz.id}  className={styles.dipedCrypto_L_img}  /></a> </div> 
-    <div className={styles.dipedCrypto_L_id}><a href={`https://www.coingecko.com/en/coins/${itemz.id}`} target='_blank' ><span className={styles.dipedCrypto_L_id_span}>{itemz.id[0].toUpperCase() + itemz.id.slice(1).toLowerCase() }</span></a>{' '}<a href={`https://www.coingecko.com/en/coins/${itemz.id}`} target='_blank' ><span className={styles.dipedCrypto_L_symbol}>{itemz.symbol.toUpperCase()} </span></a> </div> </div>) : null
+    <div className={styles.dipedCrypto_L_id}><span className={styles.dipedCrypto_L_id_span}><a href={`https://www.coingecko.com/en/coins/${itemz.id}`} target='_blank' >{itemz.id[0].toUpperCase() + itemz.id.slice(1).toLowerCase() }</a></span>{' '}<span className={styles.dipedCrypto_L_symbol}><a href={`https://www.coingecko.com/en/coins/${itemz.id}`} target='_blank' >{itemz.symbol.toUpperCase()}</a> </span> </div> </div>) : null
 }
 </div>
 <div className={styles.dipedCrypto_R} ref={rightTable} onScroll={handleShadow}>
