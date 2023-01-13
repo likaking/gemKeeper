@@ -17,6 +17,7 @@ import UpdateCoinInfo from '../src/updateCoinInfo.js'
 import InfoModal from '../src/InfoModal.js'
 import AddPriceAlertz from '../src/priceAlertz.js'
 import DisplayPriceAlertz from '../src/showPriceAlerts.js'
+import ProductAds from '../src/ourProdAds.js'
 
 
 const Footer = React.lazy(()=> import('./footer/footer.js'))
@@ -434,6 +435,7 @@ const precompArr = []
 
   <div className={styles.cmv_top}></div>
   <div className={styles.cmvBody}>
+ 
   
   <AddCrypto activeCoins={activeCoins} buy={buy} setBuy={setBuy} setActiveCoins={setActiveCoins} currency={currency} quickData={quickData} setQuickData={setQuickData} setCoinArr={setCoinArr} setRunOrStop={setRunOrStop} searchGems={searchGems} setSearchGems={setSearchGems} priceAlertzPing={priceAlertzPing} setPriceAlertzPing={setPriceAlertzPing} openPriceALertsModal={openPriceALertsModal} setOpenPriceALertsModal={setOpenPriceALertsModal} />
 
@@ -447,7 +449,10 @@ const precompArr = []
 
   <InfoModal openModal={openModal} setOpenModal={setOpenModal} activeCoins={activeCoins} setActiveCoins={setActiveCoins} modalSearch={modalSearch} setModalSearch={setModalSearch} currency={currencySymbol} setCurrency={setCurrencySymbol} startModal={startModal} setStartModal={setStartModal} index={index} setIndex={setIndex} />
 
+   
    </div>
+  {<br />}{<br />}{<br />}{<br />}
+  <ProductAds />
    </main>
 
    <Footer />
